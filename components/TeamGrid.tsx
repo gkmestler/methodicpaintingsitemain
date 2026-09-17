@@ -29,7 +29,21 @@ export default function TeamGrid() {
             </div>
             <div className={styles.infoWrap}>
               <div className={styles.info}>
-                <span className={styles.name}>{member.name}</span>
+                <div className={styles.nameRow}>
+                  <span className={styles.name}>{member.name}</span>
+                  {member.linkedin && (
+                    <a
+                      href={member.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={styles.linkedinLink}
+                      aria-label={`${member.name} on LinkedIn`}
+                    >
+                      <Image src="/images/linkedin-icon-44.png" alt="" width={18} height={18} className={styles.linkedinIcon} />
+                    </a>
+                  )}
+                </div>
+                {member.role && <span className={styles.role}>{member.role}</span>}
                 <span className={styles.title}>{member.title}</span>
               </div>
             </div>
