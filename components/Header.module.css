@@ -1,0 +1,259 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: transparent;
+  padding: 12px 0;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.scrolled,
+.dark,
+.menuOpen {
+  background: var(--black);
+}
+
+.scrolled {
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 37px;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  line-height: 0;
+}
+
+.nav {
+  display: none;
+  align-items: center;
+  gap: 30px;
+}
+
+@media (min-width: 900px) {
+  .nav {
+    display: flex;
+  }
+}
+
+.links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.link {
+  color: var(--black);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  position: relative;
+  padding-bottom: 4px;
+  transition: color 0.3s ease;
+}
+
+.link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: var(--black);
+  transform: translateX(-50%);
+  transition: width 0.3s ease, background 0.3s ease;
+}
+
+.link:hover::after,
+.link.active::after {
+  width: 100%;
+}
+
+.scrolled .link,
+.dark .link,
+.menuOpen .link {
+  color: var(--white);
+}
+
+.scrolled .link::after,
+.dark .link::after,
+.menuOpen .link::after {
+  background: var(--white);
+}
+
+/* Primary button in the nav */
+.contact {
+  display: inline-block;
+  padding: 8px 22px;
+  border-radius: 8px;
+  border: 2px solid var(--black);
+  background: var(--black);
+  color: var(--white);
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.contact:hover {
+  background: var(--bright-blue);
+  border-color: var(--bright-blue);
+  color: var(--black);
+}
+
+.scrolled .contact,
+.dark .contact,
+.menuOpen .contact {
+  background: var(--white);
+  border-color: var(--white);
+  color: var(--black);
+}
+
+.scrolled .contact:hover,
+.dark .contact:hover,
+.menuOpen .contact:hover {
+  background: var(--bright-blue);
+  border-color: var(--bright-blue);
+}
+
+/* Hamburger */
+.menuButton {
+  display: block;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+@media (min-width: 900px) {
+  .menuButton {
+    display: none;
+  }
+}
+
+.menuIcon {
+  display: block;
+  width: 25px;
+  height: 20px;
+  position: relative;
+}
+
+.menuIcon::before,
+.menuIcon::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 25px;
+  height: 2px;
+  background: var(--black);
+  transition: all 0.3s ease;
+}
+
+.menuIcon::before {
+  top: 5px;
+}
+
+.menuIcon::after {
+  bottom: 5px;
+}
+
+.scrolled .menuIcon::before,
+.scrolled .menuIcon::after,
+.dark .menuIcon::before,
+.dark .menuIcon::after,
+.menuOpen .menuIcon::before,
+.menuOpen .menuIcon::after {
+  background: var(--white);
+}
+
+.menuOpen .menuIcon::before {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.menuOpen .menuIcon::after {
+  bottom: 50%;
+  transform: translateY(50%) rotate(-45deg);
+}
+
+/* Mobile navigation panel */
+.mobileNav {
+  display: none;
+  position: fixed;
+  top: var(--header-height);
+  left: 0;
+  right: 0;
+  background: var(--black);
+  padding: 20px;
+  z-index: 999;
+}
+
+.mobileNavOpen {
+  display: block;
+}
+
+@media (min-width: 900px) {
+  .mobileNav {
+    display: none;
+  }
+}
+
+.mobileLinks {
+  list-style: none;
+}
+
+.mobileLinks li {
+  padding: 10px 0;
+}
+
+.mobileLink {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+.mobileLink::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: var(--white);
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+
+.mobileLink:hover::after,
+.mobileLink.active::after {
+  width: 100%;
+}
+
+.mobileContactItem {
+  padding-top: 16px;
+}
+
+.mobileContact {
+  display: inline-block;
+  padding: 10px 25px;
+  border-radius: 8px;
+  border: 2px solid var(--white);
+  background: var(--white);
+  color: var(--black);
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+}

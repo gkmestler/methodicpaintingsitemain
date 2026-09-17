@@ -1,0 +1,118 @@
+/* Reset and global styles. Everything component-specific lives in CSS Modules. */
+
+:root {
+  --white: #ffffff;
+  --light-blue: #c3e2ff;
+  --bright-blue: #62b2ff;
+  --black: #000000;
+
+  --font-sans: var(--font-montserrat), 'Montserrat', sans-serif;
+  --font-serif: 'Georgia', 'Georgia Pro', serif;
+
+  /* Backgrounds borrowed from the Methodic Ventures site */
+  --bg-hero-light: radial-gradient(ellipse 1800px 1200px at 85% 70%, #62b2ff 0%, #7fc0ff 15%, #c3e2ff 35%, #e6f3ff 55%, #ffffff 80%);
+  --bg-section-light: radial-gradient(ellipse 2800px 2000px at 0% 50%, #62b2ff 0%, #7fc0ff 15%, #c3e2ff 35%, #e6f3ff 55%, #ffffff 80%);
+  --bg-section-dark:
+    radial-gradient(ellipse 2400px 1200px at 50% 120%, #62b2ff 0%, #3d7fcc 10%, #1a4a80 25%, #0a1a33 40%, transparent 60%),
+    #000000;
+  --bg-hero-dark:
+    radial-gradient(ellipse 2400px 1200px at 100% 120%, #62b2ff 0%, #3d7fcc 10%, #1a4a80 25%, #0a1a33 40%, transparent 60%),
+    #000000;
+
+  --header-height: 61px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  min-height: 100vh;
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  color: var(--black);
+  background: var(--white);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+}
+
+button,
+input,
+textarea {
+  font-family: inherit;
+}
+
+/* Shared layout container, same widths and gutters as the reference */
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 100%;
+    padding: 0 40px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    padding: 0 60px;
+  }
+}
+
+/* Scroll-in animation. Elements with data-reveal start hidden and the
+   Reveal component adds .is-visible when they enter the viewport. */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+[data-reveal].is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  [data-reveal] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}

@@ -1,0 +1,33 @@
+.wordmark {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  color: var(--black);
+  white-space: nowrap;
+  line-height: 1;
+  transition: color 0.3s ease;
+}
+
+@media (min-width: 768px) {
+  .wordmark {
+    font-size: 17px;
+  }
+}
+
+.wordmarkLight {
+  color: var(--white);
+}
+
+.image {
+  height: 37px;
+  width: auto;
+  object-fit: contain;
+  object-position: left center;
+}
+
+.imageLight {
+  composes: image;
+  filter: invert(1);
+}

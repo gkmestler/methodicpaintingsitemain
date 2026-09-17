@@ -1,0 +1,41 @@
+.section {
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding: 100px 0;
+  }
+}
+
+.large {
+  padding: 100px 0;
+}
+
+@media (min-width: 768px) {
+  .large {
+    padding: 140px 0;
+  }
+}
+
+.white {
+  background: var(--white);
+  color: var(--black);
+}
+
+.light {
+  background: var(--bg-section-light);
+  color: var(--black);
+}
+
+.dark {
+  background: var(--bg-section-dark);
+  color: var(--white);
+}
+
+.black {
+  background: var(--black);
+  color: var(--white);
+}
