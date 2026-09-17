@@ -39,10 +39,7 @@ export default function Header() {
     }
   }, [])
 
-  // Close the mobile menu on navigation
-  useEffect(() => {
-    setIsMenuOpen(false)
-  }, [pathname])
+  const closeMenu = () => setIsMenuOpen(false)
 
   const isActive = (href: string) => (href === '/' ? pathname === '/' : pathname.startsWith(href))
 
@@ -95,13 +92,13 @@ export default function Header() {
         <ul className={styles.mobileLinks}>
           {navLinks.map((link) => (
             <li key={link.href}>
-              <Link href={link.href} className={`${styles.mobileLink} ${isActive(link.href) ? styles.active : ''}`}>
+              <Link href={link.href} className={`${styles.mobileLink} ${isActive(link.href) ? styles.active : ''}`} onClick={closeMenu}>
                 {link.label}
               </Link>
             </li>
           ))}
           <li className={styles.mobileContactItem}>
-            <Link href={contactLink.href} className={styles.mobileContact}>
+            <Link href={contactLink.href} className={styles.mobileContact} onClick={closeMenu}>
               {contactLink.label}
             </Link>
           </li>
