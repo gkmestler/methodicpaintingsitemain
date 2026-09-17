@@ -8,12 +8,13 @@ type PageHeroProps = {
   subtitle?: string
   buttonLabel?: string
   buttonHref?: string
-  tone?: 'light' | 'dark'
+  tone?: 'light' | 'dark' | 'transparent'
   size?: 'full' | 'short'
 }
 
 // Page-top hero. "light" is the home gradient from the reference hero,
-// "dark" is the black hero used on the reference approach page.
+// "dark" is the black hero used on the reference approach page, and
+// "transparent" lets a dark page wrapper supply the background.
 export default function PageHero({
   eyebrow,
   title,
@@ -32,7 +33,7 @@ export default function PageHero({
           {subtitle && <p className={`${styles.subtitle} ${size === 'full' ? styles.subtitleCaps : ''}`}>{subtitle}</p>}
           {buttonLabel && (
             <div className={styles.actions}>
-              <Button href={buttonHref} variant={tone === 'dark' ? 'light' : 'dark'}>
+              <Button href={buttonHref} variant={tone === 'light' ? 'dark' : 'light'}>
                 {buttonLabel}
               </Button>
             </div>

@@ -1,0 +1,142 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (min-width: 600px) {
+  .row {
+    flex-direction: row;
+  }
+
+  .row .field {
+    flex: 1;
+  }
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  line-height: 1;
+}
+
+.required {
+  color: var(--bright-blue);
+}
+
+.input {
+  display: block;
+  width: 100%;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  padding: 0 16px;
+  color: var(--white);
+  font-size: 15px;
+  line-height: 50px;
+  appearance: none;
+  transition: border-color 0.2s ease;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--bright-blue);
+}
+
+.inputError {
+  border-color: #ff7b7b;
+}
+
+.textarea {
+  height: auto;
+  min-height: 140px;
+  padding: 14px 16px;
+  line-height: 1.5;
+  resize: vertical;
+}
+
+.error {
+  margin-top: 6px;
+  font-size: 13px;
+  color: #ff9b9b;
+}
+
+.serverError {
+  padding: 14px 16px;
+  border: 1px solid #ff7b7b;
+  border-radius: 8px;
+  background: rgba(255, 123, 123, 0.1);
+  color: #ffb3b3;
+  font-size: 14px;
+}
+
+.honeypot {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 10px;
+}
+
+.submit {
+  padding: 12px 40px;
+  background: var(--white);
+  color: var(--black);
+  border: 2px solid var(--white);
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit:hover:not(:disabled) {
+  background: var(--bright-blue);
+  border-color: var(--bright-blue);
+}
+
+.submit:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.success {
+  padding: 40px 30px;
+  border: 1px solid rgba(98, 178, 255, 0.4);
+  border-radius: 8px;
+  background: rgba(98, 178, 255, 0.08);
+  text-align: center;
+}
+
+.successTitle {
+  font-family: var(--font-serif);
+  font-size: 22px;
+  line-height: 1.4;
+}
+
+@media (min-width: 768px) {
+  .successTitle {
+    font-size: 26px;
+  }
+}
