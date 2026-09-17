@@ -47,6 +47,7 @@ export default function Home() {
         buttonLabel="Contact"
         tone="light"
         size="full"
+        backgroundImage="/images/hero-painter.jpg"
       />
 
       <TextBlock heading="WHO WE ARE" tone="dark">

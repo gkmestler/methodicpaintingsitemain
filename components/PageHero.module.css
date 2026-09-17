@@ -32,7 +32,21 @@
   color: var(--white);
 }
 
+.background {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.backgroundImage {
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.18;
+}
+
 .content {
+  position: relative;
   max-width: 1100px;
 }
 
