@@ -9,10 +9,13 @@ export default function TeamGrid() {
   return (
     <div className={styles.grid}>
       {team.map((member, index) => {
-        const transform =
-          member.scale || member.offsetY
-            ? `scale(${member.scale ?? 1}) translateY(${member.offsetY ?? 0}%)`
-            : undefined
+        const zoom = member.zoom ?? 1
+        const focus = member.focus ?? 30
+        const imageStyle = {
+          objectPosition: `50% ${focus}%`,
+          transform: zoom !== 1 ? `scale(${zoom})` : undefined,
+          transformOrigin: `50% ${focus}%`,
+        }
 
         return (
           <div key={member.name} className={styles.card} data-reveal style={{ transitionDelay: `${(index % 4) * 0.08}s` }}>
@@ -24,7 +27,7 @@ export default function TeamGrid() {
                 height={500}
                 sizes="(min-width: 992px) 25vw, 50vw"
                 className={styles.image}
-                style={transform ? { transform } : undefined}
+                style={imageStyle}
               />
             </div>
             <div className={styles.infoWrap}>
