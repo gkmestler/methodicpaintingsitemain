@@ -92,7 +92,7 @@ export const team: TeamMember[] = [
     title: 'Co-Founder',
     image: '/images/team/gavin-mestler.jpg',
     zoom: 1.9,
-    focus: 6,
+    focus: 14,
     linkedin: 'https://www.linkedin.com/in/gavinmestler/',
   },
   {
