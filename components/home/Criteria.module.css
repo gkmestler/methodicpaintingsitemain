@@ -1,0 +1,47 @@
+.content {
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+@media (min-width: 768px) {
+  .item {
+    font-size: 18px;
+    gap: 20px;
+  }
+}
+
+.check {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  border: 1px solid var(--black);
+  background: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1px;
+}
+
+.check svg {
+  width: 16px;
+  height: 16px;
+}
+
+.actions {
+  margin-top: 40px;
+}

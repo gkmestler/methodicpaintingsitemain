@@ -1,0 +1,66 @@
+/* Shared type scale, composed into section modules so all pages match. */
+
+.eyebrow {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+@media (min-width: 768px) {
+  .eyebrow {
+    font-size: 14px;
+  }
+}
+
+/* All-caps section heading in Montserrat */
+.heading {
+  font-family: var(--font-sans);
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  line-height: 1.15;
+  margin-bottom: 24px;
+}
+
+@media (min-width: 768px) {
+  .heading {
+    font-size: 44px;
+    margin-bottom: 30px;
+  }
+}
+
+/* Sentence-case statement heading in Georgia, like the reference headlines */
+.serif {
+  font-family: var(--font-serif);
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 1.2;
+  margin-bottom: 24px;
+}
+
+@media (min-width: 768px) {
+  .serif {
+    font-size: 46px;
+    margin-bottom: 30px;
+  }
+}
+
+.body {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+@media (min-width: 768px) {
+  .body {
+    font-size: 18px;
+  }
+}
+
+.muted {
+  opacity: 0.85;
+}
