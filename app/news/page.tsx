@@ -28,7 +28,7 @@ export default function NewsPage() {
     <main>
       <PageHero title="NEWS & INSIGHTS" subtitle={description} tone="dark" />
 
-      <Section tone="white">
+      <Section tone="black">
         {posts.length === 0 ? (
           <p className={styles.empty} data-reveal>
             First post coming soon.

@@ -22,7 +22,7 @@
 
 .post {
   padding: 36px 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .post:first-child {

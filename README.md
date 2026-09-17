@@ -6,7 +6,7 @@ Marketing site for Methodic Painting, a seller-facing acquisition brand that buy
 
 - Next.js (App Router) with TypeScript
 - CSS Modules, no CSS frameworks
-- Montserrat via `next/font` for headings and UI, Georgia for serif statements
+- Georgia for headings and Montserrat via `next/font` for body and UI, matching the Methodic Ventures site
 - Resend for the contact form
 - Deployed on Vercel
 
@@ -78,6 +78,6 @@ public/images/placeholders/  Gray placeholder images (regenerate with node scrip
 public/info-pack.pdf    Placeholder PDF linked from the criteria section
 ```
 
-## Swapping in the logo
+## Logo
 
-Set `LOGO_SRC` in `components/Logo.tsx` to the logo file path and adjust `LOGO_WIDTH` and `LOGO_HEIGHT`. The header and footer both read from there. A dark logo is expected; the footer and dark header invert it with a CSS filter, so if you have separate light and dark files, swap the filter for a second image there.
+The header and footer both render `components/Logo.tsx`, which stacks the black and white PNGs from `public/images/logo/` and cross-fades between them. The home header shows the black logo over the light hero and switches to white once the header turns black on scroll; every other page starts black with the white logo. To replace the logo, overwrite the two PNG files and update `LOGO_WIDTH` and `LOGO_HEIGHT` in `Logo.tsx` to the new pixel dimensions.

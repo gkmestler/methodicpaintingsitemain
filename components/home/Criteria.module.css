@@ -16,6 +16,7 @@
   gap: 16px;
   font-size: 16px;
   line-height: 1.7;
+  opacity: 0.9;
 }
 
 @media (min-width: 768px) {
@@ -29,8 +30,8 @@
   flex-shrink: 0;
   width: 28px;
   height: 28px;
-  border: 1px solid var(--black);
-  background: var(--white);
+  border: 1px solid var(--white);
+  background: transparent;
   display: flex;
   align-items: center;
   justify-content: center;

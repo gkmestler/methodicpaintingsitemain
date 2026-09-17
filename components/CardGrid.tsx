@@ -12,13 +12,12 @@ type CardGridProps = {
   heading?: string
   intro?: string
   cards: Card[]
-  tone?: 'white' | 'light' | 'dark' | 'black'
+  tone?: 'dark' | 'black' | 'navy'
   columns?: 2 | 3
 }
 
 // Grid of bordered cards, the square-cornered card style from the reference.
-export default function CardGrid({ heading, intro, cards, tone = 'white', columns = 3 }: CardGridProps) {
-  const isDark = tone === 'dark' || tone === 'black'
+export default function CardGrid({ heading, intro, cards, tone = 'dark', columns = 3 }: CardGridProps) {
 
   return (
     <Section tone={tone}>
@@ -32,7 +31,7 @@ export default function CardGrid({ heading, intro, cards, tone = 'white', column
         {cards.map((card, index) => (
           <div
             key={card.title}
-            className={`${styles.card} ${isDark ? styles.cardDark : ''}`}
+            className={styles.card}
             data-reveal
             style={{ transitionDelay: `${index * 0.1}s` }}
           >

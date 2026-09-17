@@ -1,5 +1,6 @@
 .page {
-  background: var(--white);
+  background: var(--bg-hero-dark);
+  color: var(--white);
   padding: 140px 0 100px;
   min-height: 100vh;
 }
@@ -29,11 +30,9 @@
 }
 
 .article h2 {
-  font-family: var(--font-sans);
-  font-size: 16px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  font-family: var(--font-serif);
+  font-size: 22px;
+  font-weight: normal;
   margin: 36px 0 12px;
 }
 

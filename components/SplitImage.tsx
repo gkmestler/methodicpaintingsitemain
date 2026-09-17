@@ -6,11 +6,11 @@ type SplitImageProps = {
   statement: string
   imageSrc: string
   imageAlt: string
-  tone?: 'white' | 'light' | 'dark' | 'black'
+  tone?: 'dark' | 'black' | 'navy'
 }
 
 // Large serif statement beside a single image slot.
-export default function SplitImage({ statement, imageSrc, imageAlt, tone = 'white' }: SplitImageProps) {
+export default function SplitImage({ statement, imageSrc, imageAlt, tone = 'navy' }: SplitImageProps) {
   return (
     <Section tone={tone}>
       <div className={styles.grid}>

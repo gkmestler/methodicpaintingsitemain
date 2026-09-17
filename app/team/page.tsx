@@ -25,7 +25,7 @@ export default function TeamPage() {
         tone="dark"
       />
 
-      <Section tone="light">
+      <Section tone="black">
         <h2 className={styles.heading} data-reveal>
           Meet the Team
         </h2>

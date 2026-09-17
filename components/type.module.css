@@ -16,20 +16,19 @@
   }
 }
 
-/* All-caps section heading in Montserrat */
+/* Section heading in Georgia, matching the reference h2 scale */
 .heading {
-  font-family: var(--font-sans);
-  font-size: 30px;
+  font-family: var(--font-serif);
+  font-size: 32px;
   font-weight: 700;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-  line-height: 1.15;
+  letter-spacing: 0.01em;
+  line-height: 1.2;
   margin-bottom: 24px;
 }
 
 @media (min-width: 768px) {
   .heading {
-    font-size: 44px;
+    font-size: 48px;
     margin-bottom: 30px;
   }
 }

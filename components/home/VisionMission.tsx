@@ -17,7 +17,7 @@ const items = [
 
 export default function VisionMission() {
   return (
-    <Section tone="white">
+    <Section tone="black">
       <div className={styles.grid}>
         {items.map((item, index) => (
           <div key={item.title} className={styles.card} data-reveal style={{ transitionDelay: `${index * 0.1}s` }}>

@@ -20,14 +20,9 @@
   }
 }
 
-.white {
-  background: var(--white);
-  color: var(--black);
-}
-
-.light {
-  background: var(--bg-section-light);
-  color: var(--black);
+.navy {
+  background: var(--bg-section-navy);
+  color: var(--white);
 }
 
 .dark {

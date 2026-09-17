@@ -42,7 +42,7 @@ export default function HowWePartnerPage() {
         tone="dark"
       />
 
-      <Statement heading="Strength in numbers with the power of autonomy" tone="white">
+      <Statement heading="Strength in numbers with the power of autonomy" tone="black">
         <p>
           Owners get both. You keep running your business the way you always have, and you get the economics and resources of being part of a bigger group.
         </p>
@@ -52,7 +52,7 @@ export default function HowWePartnerPage() {
         statement="When you partner with Methodic, you decide what's right for you and the business, and we structure the deal around it."
         imageSrc="/images/placeholders/partner-large.png"
         imageAlt="[Partner photo]"
-        tone="light"
+        tone="navy"
       />
 
       <TextBlock heading="OUR STRATEGY" tone="dark">
@@ -61,15 +61,15 @@ export default function HowWePartnerPage() {
         </p>
       </TextBlock>
 
-      <TextBlock heading="WE ARE NEW ENGLAND FOCUSED AND PEOPLE FIRST" tone="white" buttonLabel="Contact">
+      <TextBlock heading="WE ARE NEW ENGLAND FOCUSED AND PEOPLE FIRST" tone="black" buttonLabel="Contact">
         <p>
           We&apos;re based in Massachusetts and we&apos;re buying here. We go where the best crews and the best reputations are.
         </p>
       </TextBlock>
 
-      <CardGrid cards={cards} tone="light" />
+      <CardGrid cards={cards} tone="navy" />
 
-      <Statement heading="Support customized for you and your business" tone="white">
+      <Statement heading="Support customized for you and your business" tone="black">
         <p>
           Get the partnership without the corporate layer. Benefits of ownership, none of the 11pm bookkeeping.
         </p>

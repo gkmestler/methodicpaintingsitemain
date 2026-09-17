@@ -15,7 +15,7 @@ const criteria = [
 
 export default function Criteria() {
   return (
-    <Section tone="light">
+    <Section tone="navy">
       <div className={styles.content} data-reveal>
         <h2 className={text.heading}>TYPICAL PARTNER CRITERIA</h2>
         <ul className={styles.list}>
@@ -29,7 +29,7 @@ export default function Criteria() {
           ))}
         </ul>
         <div className={styles.actions}>
-          <Button href="/info-pack.pdf" variant="dark" download>
+          <Button href="/info-pack.pdf" variant="light" download>
             Download Info Pack
           </Button>
         </div>

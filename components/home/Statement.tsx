@@ -5,11 +5,11 @@ import styles from './Statement.module.css'
 type StatementProps = {
   heading: string
   children: React.ReactNode
-  tone?: 'white' | 'light' | 'dark' | 'black'
+  tone?: 'dark' | 'black' | 'navy'
 }
 
 // Large serif statement with supporting copy, split on desktop.
-export default function Statement({ heading, children, tone = 'light' }: StatementProps) {
+export default function Statement({ heading, children, tone = 'navy' }: StatementProps) {
   return (
     <Section tone={tone}>
       <div className={styles.grid} data-reveal>

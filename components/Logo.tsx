@@ -1,12 +1,12 @@
 import Image from 'next/image'
 import styles from './Logo.module.css'
 
-// To swap in a real logo, set LOGO_SRC to a file in /public (for example
-// '/images/logo.png') and adjust LOGO_WIDTH and LOGO_HEIGHT to its rendered
-// size. Everything that shows the logo (header and footer) reads from here.
-const LOGO_SRC: string | null = null
-const LOGO_WIDTH = 150
-const LOGO_HEIGHT = 37
+// Logo files. Both are rendered and cross-faded so the header can switch
+// from black to white when its background turns black on scroll.
+const LOGO_BLACK = '/images/logo/methodic-painting-black.png'
+const LOGO_WHITE = '/images/logo/methodic-painting-white.png'
+const LOGO_WIDTH = 3416
+const LOGO_HEIGHT = 482
 
 type LogoProps = {
   tone?: 'dark' | 'light'
@@ -14,22 +14,25 @@ type LogoProps = {
 }
 
 export default function Logo({ tone = 'dark', priority = false }: LogoProps) {
-  if (LOGO_SRC) {
-    return (
+  return (
+    <span className={`${styles.logo} ${tone === 'light' ? styles.light : ''}`}>
       <Image
-        src={LOGO_SRC}
+        src={LOGO_BLACK}
         alt="Methodic Painting"
         width={LOGO_WIDTH}
         height={LOGO_HEIGHT}
         priority={priority}
-        className={tone === 'light' ? styles.imageLight : styles.image}
+        className={`${styles.image} ${styles.black}`}
       />
-    )
-  }
-
-  return (
-    <span className={`${styles.wordmark} ${tone === 'light' ? styles.wordmarkLight : ''}`}>
-      METHODIC PAINTING
+      <Image
+        src={LOGO_WHITE}
+        alt=""
+        aria-hidden="true"
+        width={LOGO_WIDTH}
+        height={LOGO_HEIGHT}
+        priority={priority}
+        className={`${styles.image} ${styles.white}`}
+      />
     </span>
   )
 }

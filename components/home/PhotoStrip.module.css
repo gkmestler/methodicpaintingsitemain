@@ -1,6 +1,7 @@
 .strip {
-  background: var(--white);
+  background: var(--black);
   overflow: hidden;
+  padding: 8px 0;
 }
 
 .row {
@@ -22,7 +23,7 @@
   scroll-snap-align: start;
   aspect-ratio: 4 / 3;
   overflow: hidden;
-  background: #d6d6d6;
+  background: #1a1a1a;
 }
 
 @media (min-width: 576px) {
