@@ -44,12 +44,7 @@
   object-fit: cover;
   object-position: top center;
   filter: grayscale(100%) contrast(1.05) brightness(1.02);
-  transition: filter 0.3s ease;
   transform-origin: top center;
-}
-
-.card:hover .image {
-  filter: grayscale(0%) contrast(1.05) brightness(1.02);
 }
 
 .infoWrap {

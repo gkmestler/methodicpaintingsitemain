@@ -72,24 +72,19 @@ export const team: TeamMember[] = [
   {
     name: 'Gavin Mestler',
     title: 'Co-Founder',
-    image: '/images/team/gavin-mestler.png',
+    image: '/images/team/gavin-mestler.jpg',
     linkedin: 'https://www.linkedin.com/in/gavinmestler/',
-    scale: 1.22,
-    offsetY: 7,
   },
   {
     name: 'Logan Mestler',
     title: 'Co-Founder',
-    image: '/images/team/logan-mestler.png',
+    image: '/images/team/logan-mestler.jpg',
     linkedin: 'https://www.linkedin.com/in/logan-mestler-753917253/',
-    scale: 1.62,
-    offsetY: 17,
   },
   {
     name: 'Dean Farber',
     title: 'Co-Founder',
-    image: '/images/team/dean-farber.png',
+    image: '/images/team/dean-farber-2.png',
     linkedin: 'https://www.linkedin.com/in/dean-farber-8b2159399/',
-    offsetY: 3,
   },
 ]
