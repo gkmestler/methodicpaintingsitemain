@@ -9,7 +9,7 @@ type TextBlockProps = {
   children: React.ReactNode
   buttonLabel?: string
   buttonHref?: string
-  tone?: 'dark' | 'black' | 'navy'
+  tone?: 'light' | 'dark' | 'black'
   align?: 'center' | 'left'
   id?: string
 }
@@ -25,6 +25,8 @@ export default function TextBlock({
   align = 'center',
   id,
 }: TextBlockProps) {
+  const isDark = tone !== 'light'
+
   return (
     <Section tone={tone} id={id}>
       <div className={`${styles.content} ${align === 'left' ? styles.left : ''}`} data-reveal>
@@ -32,7 +34,7 @@ export default function TextBlock({
         <div className={`${text.body} ${text.muted} ${styles.copy}`}>{children}</div>
         {buttonLabel && (
           <div className={styles.actions}>
-            <Button href={buttonHref} variant="light">
+            <Button href={buttonHref} variant={isDark ? 'light' : 'dark'}>
               {buttonLabel}
             </Button>
           </div>

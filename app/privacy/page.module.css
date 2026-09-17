@@ -1,6 +1,6 @@
 .page {
-  background: var(--bg-hero-dark);
-  color: var(--white);
+  background: var(--bg-section-light);
+  color: var(--black);
   padding: 140px 0 100px;
   min-height: 100vh;
 }

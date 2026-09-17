@@ -42,7 +42,7 @@ export default function HowWePartnerPage() {
         tone="dark"
       />
 
-      <Statement heading="Strength in numbers with the power of autonomy" tone="black">
+      <Statement heading="Strength in numbers with the power of autonomy" tone="light">
         <p>
           Owners get both. You keep running your business the way you always have, and you get the economics and resources of being part of a bigger group.
         </p>
@@ -52,22 +52,22 @@ export default function HowWePartnerPage() {
         statement="When you partner with Methodic, you decide what's right for you and the business, and we structure the deal around it."
         imageSrc="/images/placeholders/partner-large.png"
         imageAlt="[Partner photo]"
-        tone="navy"
+        tone="dark"
       />
 
-      <TextBlock heading="OUR STRATEGY" tone="dark">
+      <TextBlock heading="OUR STRATEGY" tone="light">
         <p>
           We invest in painting companies with strong crews and strong reputations. We keep the people, we keep the name, and we add the systems and capital to grow.
         </p>
       </TextBlock>
 
-      <TextBlock heading="WE ARE NEW ENGLAND FOCUSED AND PEOPLE FIRST" tone="black" buttonLabel="Contact">
+      <TextBlock heading="WE ARE NEW ENGLAND FOCUSED AND PEOPLE FIRST" tone="dark" buttonLabel="Contact">
         <p>
           We&apos;re based in Massachusetts and we&apos;re buying here. We go where the best crews and the best reputations are.
         </p>
       </TextBlock>
 
-      <CardGrid cards={cards} tone="navy" />
+      <CardGrid cards={cards} tone="light" />
 
       <Statement heading="Support customized for you and your business" tone="black">
         <p>

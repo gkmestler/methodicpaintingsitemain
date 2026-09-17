@@ -49,13 +49,13 @@ export default function Home() {
         size="full"
       />
 
-      <TextBlock heading="WHO WE ARE" tone="black">
+      <TextBlock heading="WHO WE ARE" tone="dark">
         <p>
           Methodic Painting is building a network of the best painting companies in New England. We&apos;re not a private equity firm and we&apos;re not a big competitor coming to town. We&apos;re a group of owner-operators and trade-business builders who think painting companies deserve a better exit than a broker listing or a handshake sale.
         </p>
       </TextBlock>
 
-      <TextBlock heading="WHY METHODIC" tone="dark" buttonLabel="Contact">
+      <TextBlock heading="WHY METHODIC" tone="light" buttonLabel="Contact">
         <p>
           Owners can take money off the table now and keep a piece of the business so they still win as it grows. We keep your crews, your foreman, and your name on the trucks. What changes is that you get the back office, the estimating support, and the growth capital you&apos;ve never had time to build yourself.
         </p>
@@ -63,7 +63,7 @@ export default function Home() {
 
       <PhotoStrip />
 
-      <Statement heading="A network of painting companies built on reputation." tone="navy">
+      <Statement heading="A network of painting companies built on reputation." tone="dark">
         <p>
           You can&apos;t buy a good name in a town. You earn it, one house and one commercial job at a time. Our job is to protect what you built and give your team the resources to build on it.
         </p>
@@ -81,7 +81,7 @@ export default function Home() {
         heading="GROWTH BUILT ON PARTNERSHIP"
         intro="We grow companies by investing in people and systems, not by cutting costs. Every deal is structured so the owner, the crew, and Methodic all win together."
         cards={pillars}
-        tone="black"
+        tone="light"
       />
 
       <Strategy />

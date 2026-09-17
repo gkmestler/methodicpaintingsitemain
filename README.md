@@ -80,4 +80,4 @@ public/info-pack.pdf    Placeholder PDF linked from the criteria section
 
 ## Logo
 
-The header and footer both render `components/Logo.tsx`, which stacks the black and white PNGs from `public/images/logo/` and cross-fades between them. The home header shows the black logo over the light hero and switches to white once the header turns black on scroll; every other page starts black with the white logo. To replace the logo, overwrite the two PNG files and update `LOGO_WIDTH` and `LOGO_HEIGHT` in `Logo.tsx` to the new pixel dimensions.
+The header and footer both render `components/Logo.tsx`, which stacks the black and white PNGs from `public/images/logo/` and cross-fades between them. The header shows the black logo over light sections and switches to white once the header turns black on scroll; pages with a dark hero start black with the white logo. To replace the logo, overwrite the two PNG files and update `LOGO_WIDTH` and `LOGO_HEIGHT` in `Logo.tsx` to the new pixel dimensions.

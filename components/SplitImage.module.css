@@ -27,11 +27,19 @@
 }
 
 .imageWrap {
-  border: 1px solid rgba(255, 255, 255, 0.4);
   overflow: hidden;
   line-height: 0;
   aspect-ratio: 6 / 5;
+}
+
+.imageWrapDark {
+  border: 1px solid rgba(255, 255, 255, 0.4);
   background: #1a1a1a;
+}
+
+.imageWrapLight {
+  border: 2px solid var(--black);
+  background: #cccccc;
 }
 
 .image {

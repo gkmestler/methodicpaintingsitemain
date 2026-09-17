@@ -7,16 +7,16 @@ import Logo from './Logo'
 import { navLinks, contactLink } from '@/lib/site'
 import styles from './Header.module.css'
 
-// Only the home hero is light. Every other page starts with a black header
-// and the white logo, and the home header switches to that on scroll.
-const lightRoutes = ['/']
+// Pages with a dark hero start with a black header and the white logo.
+// Everything else starts transparent with the black logo and switches on scroll.
+const darkRoutes = ['/how-we-partner', '/team', '/news', '/contact']
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const pathname = usePathname()
 
-  const isDark = !lightRoutes.includes(pathname)
+  const isDark = darkRoutes.some((route) => pathname === route || pathname.startsWith(`${route}/`))
   const isInverted = isDark || isScrolled || isMenuOpen
 
   useEffect(() => {

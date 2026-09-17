@@ -11,9 +11,7 @@
 
   /* Backgrounds borrowed from the Methodic Ventures site */
   --bg-hero-light: radial-gradient(ellipse 1800px 1200px at 85% 70%, #62b2ff 0%, #7fc0ff 15%, #c3e2ff 35%, #e6f3ff 55%, #ffffff 80%);
-  --bg-section-navy:
-    radial-gradient(ellipse 2400px 1400px at 0% 0%, #1a4a80 0%, #0f2d52 25%, #0a1a33 45%, transparent 70%),
-    #000000;
+  --bg-section-light: radial-gradient(ellipse 2800px 2000px at 0% 50%, #62b2ff 0%, #7fc0ff 15%, #c3e2ff 35%, #e6f3ff 55%, #ffffff 80%);
   --bg-section-dark:
     radial-gradient(ellipse 2400px 1200px at 50% 120%, #62b2ff 0%, #3d7fcc 10%, #1a4a80 25%, #0a1a33 40%, transparent 60%),
     #000000;
@@ -40,8 +38,8 @@ body {
   min-height: 100vh;
   font-family: var(--font-sans);
   line-height: 1.6;
-  color: var(--white);
-  background: var(--black);
+  color: var(--black);
+  background: var(--white);
   -webkit-font-smoothing: antialiased;
 }
 

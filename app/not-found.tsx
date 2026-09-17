@@ -8,7 +8,7 @@ export default function NotFound() {
       <div className="container">
         <div className={styles.content}>
           <h1 className={styles.title}>Page not found</h1>
-          <Button href="/" variant="light">
+          <Button href="/" variant="dark">
             Back to home
           </Button>
           <p className={styles.alt}>
