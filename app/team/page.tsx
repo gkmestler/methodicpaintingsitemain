@@ -23,6 +23,8 @@ export default function TeamPage() {
         subtitle="Methodic Painting is run by operators and backed by people who have built, run, and sold trade businesses. We're here to serve the companies we partner with."
         buttonLabel="Contact"
         tone="dark"
+        size="tall"
+        backgroundImage="/images/founders.jpg"
       />
 
       <Section tone="light">
