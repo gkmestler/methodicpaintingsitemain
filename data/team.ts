@@ -21,8 +21,8 @@ export const team: TeamMember[] = [
     name: 'Gavin Mestler',
     title: 'Co-Founder and Managing Partner',
     image: '/images/team/gavin-mestler-2.jpg',
-    zoom: 1.1,
-    focus: 30,
+    zoom: 1.3,
+    focus: 22,
     linkedin: 'https://www.linkedin.com/in/gavinmestler/',
   },
   {
