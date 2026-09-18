@@ -99,11 +99,12 @@
   margin-top: 10px;
 }
 
+/* Matches the input fields: transparent with the same soft border */
 .submit {
   padding: 12px 40px;
-  background: var(--white);
-  color: var(--black);
-  border: 2px solid var(--white);
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--white);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 8px;
   font-size: 16px;
   font-weight: 600;
@@ -111,9 +112,12 @@
   transition: all 0.3s ease;
 }
 
-.submit:hover:not(:disabled) {
+.submit:hover:not(:disabled),
+.submit:focus-visible {
   background: var(--bright-blue);
   border-color: var(--bright-blue);
+  color: var(--black);
+  outline: none;
 }
 
 .submit:disabled {
