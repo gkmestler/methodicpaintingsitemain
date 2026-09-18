@@ -62,7 +62,6 @@ app/
   page.tsx              Home
   how-we-partner/       How We Partner
   team/                 Team grid
-  news/                 News list (reads data/posts.ts)
   contact/              Contact page
   privacy/              Privacy Policy
   api/contact/route.ts  Resend route handler
@@ -70,7 +69,6 @@ app/
 components/             Shared UI, each with a CSS Module
 components/home/        Home-only sections
 data/team.ts            Team members, in display order
-data/posts.ts           News posts (empty until the first post)
 lib/site.ts             Site name, URL, email, phone, LinkedIn, nav links
 lib/contact.ts          Contact form validation shared by client and server
 public/images/team/     Headshots

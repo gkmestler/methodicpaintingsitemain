@@ -10,7 +10,7 @@ import styles from './Header.module.css'
 // Pages with a dark hero get white text and the white logo from the top.
 // Everything else starts with black text and switches to white on scroll.
 // The header background is transparent on every page until the user scrolls.
-const darkRoutes = ['/how-we-partner', '/team', '/news', '/contact']
+const darkRoutes = ['/how-we-partner', '/team', '/contact']
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false)

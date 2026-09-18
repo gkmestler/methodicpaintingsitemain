@@ -18,7 +18,6 @@ export const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/how-we-partner', label: 'How We Partner' },
   { href: '/team', label: 'Team' },
-  { href: '/news', label: 'News' },
 ]
 
 export const contactLink = { href: '/contact', label: 'Contact' }
