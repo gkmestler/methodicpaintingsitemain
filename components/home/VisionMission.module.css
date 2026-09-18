@@ -14,8 +14,10 @@
 }
 
 .card {
-  background: var(--light-blue);
+  background: var(--black);
+  color: var(--white);
   border: 1px solid var(--black);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
   padding: 40px 28px;
 }
 
