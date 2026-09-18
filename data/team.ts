@@ -1,4 +1,4 @@
-// Team grid, rendered in order. Advisors first, co-founders last.
+// Team grid, rendered in order. Co-founders first, then advisors.
 // Roles, titles, and LinkedIn URLs come from the Methodic Ventures site.
 
 export type TeamMember = {
@@ -16,6 +16,30 @@ export type TeamMember = {
 }
 
 export const team: TeamMember[] = [
+  {
+    name: 'Gavin Mestler',
+    title: 'Co-Founder',
+    image: '/images/team/gavin-mestler.jpg',
+    zoom: 1.9,
+    focus: 14,
+    linkedin: 'https://www.linkedin.com/in/gavinmestler/',
+  },
+  {
+    name: 'Logan Mestler',
+    title: 'Co-Founder',
+    image: '/images/team/logan-mestler.jpg',
+    zoom: 1.15,
+    focus: 25,
+    linkedin: 'https://www.linkedin.com/in/logan-mestler-753917253/',
+  },
+  {
+    name: 'Dean Farber',
+    title: 'Co-Founder',
+    image: '/images/team/dean-farber-2.png',
+    zoom: 1.15,
+    focus: 20,
+    linkedin: 'https://www.linkedin.com/in/dean-farber-8b2159399/',
+  },
   {
     name: 'Brad Johnson',
     role: 'Operations',
@@ -86,29 +110,5 @@ export const team: TeamMember[] = [
     zoom: 1,
     focus: 0,
     linkedin: 'https://www.linkedin.com/in/chadmestler/',
-  },
-  {
-    name: 'Gavin Mestler',
-    title: 'Co-Founder',
-    image: '/images/team/gavin-mestler.jpg',
-    zoom: 1.9,
-    focus: 14,
-    linkedin: 'https://www.linkedin.com/in/gavinmestler/',
-  },
-  {
-    name: 'Logan Mestler',
-    title: 'Co-Founder',
-    image: '/images/team/logan-mestler.jpg',
-    zoom: 1.15,
-    focus: 25,
-    linkedin: 'https://www.linkedin.com/in/logan-mestler-753917253/',
-  },
-  {
-    name: 'Dean Farber',
-    title: 'Co-Founder',
-    image: '/images/team/dean-farber-2.png',
-    zoom: 1.15,
-    focus: 20,
-    linkedin: 'https://www.linkedin.com/in/dean-farber-8b2159399/',
   },
 ]
