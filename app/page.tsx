@@ -56,13 +56,13 @@ export default function Home() {
         backgroundImage="/images/hero-painter.jpg"
       />
 
-      <TextBlock heading="WHO WE ARE" tone="dark">
+      <TextBlock heading="WHO WE ARE" tone="dark" align="right">
         <p>
           Methodic Painting is building a network of the best painting companies in New England. We&apos;re not a private equity firm and we&apos;re not a big competitor coming to town. We&apos;re a group of owner-operators and trade-business builders who think painting companies deserve a better exit than a broker listing or a handshake sale.
         </p>
       </TextBlock>
 
-      <TextBlock heading="WHY METHODIC" tone="light" buttonLabel="Contact">
+      <TextBlock heading="WHY METHODIC" tone="light" buttonLabel="Contact" align="left">
         <p>
           Owners can take money off the table now and keep a piece of the business so they still win as it grows. We keep your crews, your foreman, and your name on the trucks. What changes is that you get the back office, the estimating support, and the growth capital you&apos;ve never had time to build yourself.
         </p>

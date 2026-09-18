@@ -10,7 +10,8 @@ type TextBlockProps = {
   buttonLabel?: string
   buttonHref?: string
   tone?: 'light' | 'dark' | 'black'
-  align?: 'center' | 'left'
+  // center: centered text; left / right: left-aligned text placed on that side of the page
+  align?: 'center' | 'left' | 'right'
   id?: string
 }
 
@@ -29,7 +30,7 @@ export default function TextBlock({
 
   return (
     <Section tone={tone} id={id}>
-      <div className={`${styles.content} ${align === 'left' ? styles.left : ''}`} data-reveal>
+      <div className={`${styles.content} ${align !== 'center' ? styles[align] : ''}`} data-reveal>
         <h2 className={headingStyle === 'serif' ? text.serif : text.heading}>{heading}</h2>
         <div className={`${text.body} ${text.muted} ${styles.copy}`}>{children}</div>
         {buttonLabel && (
