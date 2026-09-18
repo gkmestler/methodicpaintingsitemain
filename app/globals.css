@@ -15,6 +15,10 @@
   --bg-section-dark:
     radial-gradient(ellipse 2400px 1200px at 50% 120%, #62b2ff 0%, #3d7fcc 10%, #1a4a80 25%, #0a1a33 40%, transparent 60%),
     #000000;
+  /* Same glow as the dark sections, scaled to fit inside a card */
+  --bg-card-dark:
+    radial-gradient(ellipse 120% 80% at 50% 120%, #62b2ff 0%, #3d7fcc 12%, #1a4a80 30%, #0a1a33 50%, transparent 72%),
+    #000000;
   --bg-hero-dark:
     radial-gradient(ellipse 2400px 1200px at 100% 120%, #62b2ff 0%, #3d7fcc 10%, #1a4a80 25%, #0a1a33 40%, transparent 60%),
     #000000;

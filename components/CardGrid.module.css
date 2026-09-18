@@ -43,7 +43,7 @@
 }
 
 .cardLight {
-  background: var(--black);
+  background: var(--bg-card-dark);
   color: var(--white);
   border: 1px solid var(--black);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
