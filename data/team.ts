@@ -22,7 +22,7 @@ export const team: TeamMember[] = [
     title: 'Co-Founder and Managing Partner',
     image: '/images/team/gavin-mestler-2.jpg',
     zoom: 1.3,
-    focus: 22,
+    focus: 28,
     linkedin: 'https://www.linkedin.com/in/gavinmestler/',
   },
   {
@@ -30,7 +30,7 @@ export const team: TeamMember[] = [
     title: 'Co-Founder and Managing Partner',
     image: '/images/team/logan-mestler.jpg',
     zoom: 1.25,
-    focus: 32,
+    focus: 38,
     linkedin: 'https://www.linkedin.com/in/logan-mestler-753917253/',
   },
   {
@@ -38,7 +38,7 @@ export const team: TeamMember[] = [
     title: 'Co-Founder and Managing Partner',
     image: '/images/team/dean-farber-3.jpg',
     zoom: 1.3,
-    focus: 40,
+    focus: 46,
     linkedin: 'https://www.linkedin.com/in/dean-farber-8b2159399/',
   },
   {
