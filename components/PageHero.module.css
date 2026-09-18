@@ -45,9 +45,9 @@
   opacity: 0.18;
 }
 
-/* Photos need a little more presence to read through a black background */
 .dark .backgroundImage {
-  opacity: 0.3;
+  opacity: 0.12;
+  object-position: center 80%;
 }
 
 .content {
