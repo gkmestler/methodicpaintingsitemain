@@ -7,8 +7,9 @@ import Logo from './Logo'
 import { navLinks, contactLink } from '@/lib/site'
 import styles from './Header.module.css'
 
-// Pages with a dark hero start with a black header and the white logo.
-// Everything else starts transparent with the black logo and switches on scroll.
+// Pages with a dark hero get white text and the white logo from the top.
+// Everything else starts with black text and switches to white on scroll.
+// The header background is transparent on every page until the user scrolls.
 const darkRoutes = ['/how-we-partner', '/team', '/news', '/contact']
 
 export default function Header() {

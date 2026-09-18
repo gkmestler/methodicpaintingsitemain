@@ -9,8 +9,9 @@
   transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Transparent over the hero, black once scrolled or when the menu is open.
+   .dark only switches the text and logo to white for dark heroes. */
 .scrolled,
-.dark,
 .menuOpen {
   background: var(--black);
 }
