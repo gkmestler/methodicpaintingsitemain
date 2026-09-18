@@ -10,12 +10,12 @@ import Strategy from '@/components/home/Strategy'
 import Criteria from '@/components/home/Criteria'
 
 export const metadata: Metadata = {
-  title: 'Methodic Painting | Backing Painting Companies in New England',
+  title: 'Methodic Painting | We Back Painting Companies in New England',
   description:
     'Methodic Painting is building a network of the best painting companies in New England. Owner-operators who back painting companies to grow, transition, and win.',
   alternates: { canonical: '/' },
   openGraph: {
-    title: 'Methodic Painting | Backing Painting Companies in New England',
+    title: 'Methodic Painting | We Back Painting Companies in New England',
     description:
       'Methodic Painting is building a network of the best painting companies in New England. Owner-operators who back painting companies to grow, transition, and win.',
     url: '/',
@@ -41,8 +41,7 @@ export default function Home() {
   return (
     <main>
       <PageHero
-        eyebrow="METHODIC PAINTING"
-        title="BACKING PAINTING COMPANIES"
+        title="WE BACK PAINTING COMPANIES"
         subtitle="TO GROW, TRANSITION, AND WIN"
         buttonLabel="Contact"
         tone="light"

@@ -62,7 +62,7 @@ export default function Header() {
 
             <nav className={styles.nav} aria-label="Primary">
               <ul className={styles.links}>
-                {navLinks.map((link) => (
+                {[...navLinks, contactLink].map((link) => (
                   <li key={link.href}>
                     <Link href={link.href} className={`${styles.link} ${isActive(link.href) ? styles.active : ''}`}>
                       {link.label}
@@ -70,9 +70,6 @@ export default function Header() {
                   </li>
                 ))}
               </ul>
-              <Link href={contactLink.href} className={styles.contact}>
-                {contactLink.label}
-              </Link>
             </nav>
 
             <button
@@ -91,18 +88,13 @@ export default function Header() {
 
       <nav id="mobile-nav" className={`${styles.mobileNav} ${isMenuOpen ? styles.mobileNavOpen : ''}`} aria-label="Mobile">
         <ul className={styles.mobileLinks}>
-          {navLinks.map((link) => (
+          {[...navLinks, contactLink].map((link) => (
             <li key={link.href}>
               <Link href={link.href} className={`${styles.mobileLink} ${isActive(link.href) ? styles.active : ''}`} onClick={closeMenu}>
                 {link.label}
               </Link>
             </li>
           ))}
-          <li className={styles.mobileContactItem}>
-            <Link href={contactLink.href} className={styles.mobileContact} onClick={closeMenu}>
-              {contactLink.label}
-            </Link>
-          </li>
         </ul>
       </nav>
     </>
