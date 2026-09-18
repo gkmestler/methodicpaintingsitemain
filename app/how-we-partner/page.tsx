@@ -40,6 +40,7 @@ export default function HowWePartnerPage() {
         subtitle="We partner with the best painting companies in their market."
         buttonLabel="Contact"
         tone="dark"
+        backgroundImage="/images/partner-handshake.jpg"
       />
 
       <Statement heading="Strength in numbers with the power of autonomy" tone="light">

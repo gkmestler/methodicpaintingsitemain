@@ -45,6 +45,11 @@
   opacity: 0.18;
 }
 
+/* Photos need a little more presence to read through a black background */
+.dark .backgroundImage {
+  opacity: 0.3;
+}
+
 .content {
   position: relative;
   max-width: 1100px;
