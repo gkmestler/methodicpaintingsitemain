@@ -48,7 +48,6 @@
 .dark .backgroundImage {
   opacity: 0.07;
   object-position: center top;
-  transform: translateY(18%);
 }
 
 .content {
