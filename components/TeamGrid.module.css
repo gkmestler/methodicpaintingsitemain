@@ -65,18 +65,39 @@
   border: 1px solid var(--white);
   color: var(--white);
   padding: 6px 10px 5px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  /* Fixed height so every card's box matches, sized for a two-line title */
-  min-height: 98px;
+  overflow: hidden;
+  transition: all 0.3s ease;
 }
 
 @media (min-width: 576px) {
   .info {
     padding: 8px 15px 6px;
-    min-height: 94px;
   }
+}
+
+.expandable {
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.expandable:focus-visible {
+  outline: 2px solid var(--bright-blue);
+  outline-offset: 2px;
+}
+
+.infoRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.infoText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+  min-width: 0;
 }
 
 .nameRow {
@@ -115,6 +136,7 @@
   border-radius: 2px;
   background: transparent;
   flex-shrink: 0;
+  pointer-events: auto;
   transition: all 0.2s ease;
 }
 
@@ -147,28 +169,74 @@
   filter: invert(1);
 }
 
-.role {
-  font-family: var(--font-sans);
-  font-size: 9px;
-  font-weight: 500;
-  opacity: 0.85;
-}
-
-@media (min-width: 576px) {
-  .role {
-    font-size: 12px;
-  }
-}
-
+/* Title: two lines reserved so every box is the same height */
 .title {
   font-family: var(--font-sans);
-  font-size: 9px;
+  font-size: 10px;
   line-height: 1.4;
-  opacity: 0.7;
+  opacity: 0.85;
+  min-height: 28px;
 }
 
 @media (min-width: 576px) {
   .title {
-    font-size: 11px;
+    font-size: 14px;
+    min-height: 40px;
   }
+}
+
+.arrow {
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  margin-top: 2px;
+  transition: transform 0.3s ease;
+}
+
+.arrow svg {
+  width: 10px;
+  height: 10px;
+}
+
+@media (min-width: 576px) {
+  .arrow {
+    width: 24px;
+    height: 24px;
+  }
+
+  .arrow svg {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+.expanded .arrow {
+  transform: rotate(180deg);
+}
+
+/* Bio, collapsed until the box is clicked */
+.bio {
+  font-family: var(--font-sans);
+  font-size: 10px;
+  line-height: 1.5;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease, max-height 0.3s ease, margin-top 0.3s ease;
+}
+
+@media (min-width: 576px) {
+  .bio {
+    font-size: 13px;
+  }
+}
+
+.expanded .bio {
+  opacity: 0.8;
+  max-height: 150px;
+  margin-top: 8px;
 }
