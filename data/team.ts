@@ -52,7 +52,7 @@ export const team: TeamMember[] = [
   },
   {
     name: 'Warren Cross',
-    title: 'Trades Advisor',
+    title: 'Home Services Advisor',
     bio: 'Founder & CEO of Cross Services Group, a 35-year home services and trades operator in Greater Boston',
     image: '/images/team/warren-cross.jpg',
     zoom: 1.1,
