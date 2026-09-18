@@ -37,8 +37,8 @@ export const team: TeamMember[] = [
     name: 'Dean Farber',
     title: 'Co-Founder and Managing Partner',
     image: '/images/team/dean-farber-3.jpg',
-    zoom: 1,
-    focus: 45,
+    zoom: 1.3,
+    focus: 40,
     linkedin: 'https://www.linkedin.com/in/dean-farber-8b2159399/',
   },
   {
