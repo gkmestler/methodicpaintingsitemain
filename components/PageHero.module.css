@@ -17,6 +17,16 @@
   padding: 120px 0 100px;
 }
 
+.tall {
+  min-height: 70vh;
+}
+
+@media (min-width: 768px) {
+  .tall {
+    min-height: 85vh;
+  }
+}
+
 .light {
   background: var(--bg-hero-light);
   color: var(--black);

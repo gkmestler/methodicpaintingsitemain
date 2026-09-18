@@ -10,7 +10,7 @@ type PageHeroProps = {
   buttonLabel?: string
   buttonHref?: string
   tone?: 'light' | 'dark' | 'transparent'
-  size?: 'full' | 'short'
+  size?: 'full' | 'tall' | 'short'
   // Optional photo layered under the gradient at low opacity
   backgroundImage?: string
 }
@@ -29,7 +29,7 @@ export default function PageHero({
   backgroundImage,
 }: PageHeroProps) {
   return (
-    <section className={`${styles.hero} ${styles[tone]} ${size === 'full' ? styles.full : ''}`}>
+    <section className={`${styles.hero} ${styles[tone]} ${size !== 'short' ? styles[size] : ''}`}>
       {backgroundImage && (
         <div className={styles.background} aria-hidden="true">
           <Image src={backgroundImage} alt="" fill priority sizes="100vw" className={styles.backgroundImage} />

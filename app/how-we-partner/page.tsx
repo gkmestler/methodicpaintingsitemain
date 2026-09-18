@@ -40,6 +40,7 @@ export default function HowWePartnerPage() {
         subtitle="We partner with the best painting companies in their market."
         buttonLabel="Contact"
         tone="dark"
+        size="tall"
         backgroundImage="/images/partner-handshake.jpg"
       />
 
