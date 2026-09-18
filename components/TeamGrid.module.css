@@ -72,11 +72,15 @@
   padding: 6px 10px 5px;
   overflow: hidden;
   transition: all 0.3s ease;
+  /* Reserve room for a two-line title so every box matches when collapsed.
+     The space sits below the content, so an expanded bio follows the title. */
+  min-height: 62px;
 }
 
 @media (min-width: 576px) {
   .info {
     padding: 8px 15px 6px;
+    min-height: 84px;
   }
 }
 
@@ -174,19 +178,17 @@
   filter: invert(1);
 }
 
-/* Title: two lines reserved so every box is the same height */
+
 .title {
   font-family: var(--font-sans);
   font-size: 10px;
   line-height: 1.4;
   opacity: 0.85;
-  min-height: 28px;
 }
 
 @media (min-width: 576px) {
   .title {
     font-size: 14px;
-    min-height: 40px;
   }
 }
 
@@ -231,7 +233,7 @@
   opacity: 0;
   max-height: 0;
   overflow: hidden;
-  transition: opacity 0.3s ease, max-height 0.3s ease, margin-top 0.3s ease;
+  transition: opacity 0.3s ease, max-height 0.3s ease;
 }
 
 @media (min-width: 576px) {
@@ -243,5 +245,5 @@
 .expanded .bio {
   opacity: 0.8;
   max-height: 150px;
-  margin-top: 8px;
+  margin-top: 3px;
 }
