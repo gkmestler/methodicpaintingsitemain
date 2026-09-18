@@ -3,7 +3,6 @@ import PageHero from '@/components/PageHero'
 import TextBlock from '@/components/TextBlock'
 import CardGrid from '@/components/CardGrid'
 import Closer from '@/components/Closer'
-import PhotoStrip from '@/components/home/PhotoStrip'
 import Statement from '@/components/home/Statement'
 import VisionMission from '@/components/home/VisionMission'
 import Strategy from '@/components/home/Strategy'
@@ -37,6 +36,14 @@ const pillars = [
   },
 ]
 
+// Crew and job-site photos beside the reputation statement
+const networkPhotos = [
+  { src: '/images/network/painting-1.jpg', alt: 'Painter spraying the exterior trim of a house' },
+  { src: '/images/network/painting-2.jpg', alt: 'Painting crew at work on a job site' },
+  { src: '/images/network/painting-3.jpg', alt: 'Painter working on a residential exterior' },
+  { src: '/images/network/painting-4.jpg', alt: 'Painting crew on a commercial job' },
+]
+
 export default function Home() {
   return (
     <main>
@@ -61,9 +68,7 @@ export default function Home() {
         </p>
       </TextBlock>
 
-      <PhotoStrip />
-
-      <Statement heading="A network of painting companies built on reputation." tone="dark">
+      <Statement heading="A network of painting companies built on reputation." tone="dark" images={networkPhotos}>
         <p>
           You can&apos;t buy a good name in a town. You earn it, one house and one commercial job at a time. Our job is to protect what you built and give your team the resources to build on it.
         </p>
