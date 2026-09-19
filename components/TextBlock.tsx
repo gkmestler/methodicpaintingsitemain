@@ -12,6 +12,8 @@ type TextBlockProps = {
   tone?: 'light' | 'dark' | 'black'
   // center: centered text; left / right: left-aligned text placed on that side of the page
   align?: 'center' | 'left' | 'right'
+  // Optional content shown in a right column beside left-aligned text
+  aside?: React.ReactNode
   id?: string
 }
 
@@ -24,13 +26,14 @@ export default function TextBlock({
   buttonHref = '/contact',
   tone = 'dark',
   align = 'center',
+  aside,
   id,
 }: TextBlockProps) {
   const isDark = tone !== 'light'
+  const placement = aside ? 'left' : align
 
-  return (
-    <Section tone={tone} id={id}>
-      <div className={`${styles.content} ${align !== 'center' ? styles[align] : ''}`} data-reveal>
+  const content = (
+    <div className={`${styles.content} ${placement !== 'center' ? styles[placement] : ''}`} data-reveal>
         <h2 className={headingStyle === 'serif' ? text.serif : text.heading}>{heading}</h2>
         <div className={`${text.body} ${text.muted} ${styles.copy}`}>{children}</div>
         {buttonLabel && (
@@ -41,6 +44,20 @@ export default function TextBlock({
           </div>
         )}
       </div>
+  )
+
+  return (
+    <Section tone={tone} id={id}>
+      {aside ? (
+        <div className={styles.split}>
+          {content}
+          <div className={styles.aside} data-reveal style={{ transitionDelay: '0.15s' }}>
+            {aside}
+          </div>
+        </div>
+      ) : (
+        content
+      )}
     </Section>
   )
 }

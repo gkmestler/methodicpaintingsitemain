@@ -1,0 +1,7 @@
+/* Black state silhouette with a blue glow traced around its edge */
+.stateIcon {
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  filter: drop-shadow(0 0 2px #62b2ff) drop-shadow(0 0 10px #62b2ff) drop-shadow(0 0 28px rgba(98, 178, 255, 0.6));
+}

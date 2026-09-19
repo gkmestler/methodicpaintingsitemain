@@ -25,3 +25,29 @@
 .actions {
   margin-top: 36px;
 }
+
+/* Two-column layout used when an aside is provided */
+.split {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (min-width: 900px) {
+  .split {
+    grid-template-columns: 1.1fr 1fr;
+    gap: 80px;
+  }
+}
+
+.split .left {
+  max-width: none;
+}
+
+.aside {
+  display: flex;
+  justify-content: center;
+}
