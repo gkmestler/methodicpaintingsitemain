@@ -1,5 +1,4 @@
 import Section from '../Section'
-import Button from '../Button'
 import { CheckIcon } from '../icons'
 import text from '../type.module.css'
 import styles from './Criteria.module.css'
@@ -28,11 +27,6 @@ export default function Criteria() {
             </li>
           ))}
         </ul>
-        <div className={styles.actions}>
-          <Button href="/info-pack.pdf" variant="dark" download>
-            Download Info Pack
-          </Button>
-        </div>
       </div>
     </Section>
   )

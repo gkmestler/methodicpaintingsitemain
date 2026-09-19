@@ -73,7 +73,6 @@ lib/site.ts             Site name, URL, email, phone, LinkedIn, nav links
 lib/contact.ts          Contact form validation shared by client and server
 public/images/team/     Headshots
 public/images/network/     Crew and job-site photos on the home page
-public/info-pack.pdf    Placeholder PDF linked from the criteria section
 ```
 
 ## Logo
