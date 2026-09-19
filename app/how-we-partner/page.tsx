@@ -59,15 +59,12 @@ export default function HowWePartnerPage() {
         When you partner with Methodic, you decide what&apos;s right for you and the business, and we structure the deal around it.
       </Quote>
 
-      <TextBlock heading="OUR STRATEGY" tone="light">
+      <TextBlock heading="OUR STRATEGY" tone="black" buttonLabel="Contact">
         <p>
           We invest in painting companies with strong crews and strong reputations. We keep the people, we keep the name, and we add the systems and capital to grow.
         </p>
-      </TextBlock>
-
-      <TextBlock heading="WE ARE NEW ENGLAND FOCUSED AND PEOPLE FIRST" tone="dark" buttonLabel="Contact">
         <p>
-          We&apos;re based in Massachusetts and we&apos;re buying here. We go where the best crews and the best reputations are.
+          We are Massachusetts focused and people first. We&apos;re based here and we&apos;re buying here, and we go where the best crews and the best reputations are.
         </p>
       </TextBlock>
 
