@@ -105,7 +105,7 @@ export const team: TeamMember[] = [
   {
     name: 'Erik Noyes',
     title: 'Strategy Advisor',
-    bio: 'Director of The Generator AI Lab and Professor of Entrepreneurship at Babson College',
+    bio: 'Director of The Generator AI Lab and Professor of Entrepreneurship at Babson College, named one of the 50 best undergraduate business professors in the country by Poets&Quants.',
     image: '/images/team/erik-noyes.webp',
     zoom: 1.2,
     focus: 10,
@@ -114,7 +114,7 @@ export const team: TeamMember[] = [
   {
     name: 'Chad Mestler',
     title: 'Capital Markets Advisor',
-    bio: 'Founder of Helvetica Group and Raiseli.com',
+    bio: 'Founder of Helvetica Group, a real estate investment and private lending firm he has led since 2001. An attorney and licensed broker with nearly 30 years in hard money lending and capital markets, he brings the financing expertise behind every deal.',
     image: '/images/team/chad-mestler.jpg',
     zoom: 1,
     focus: 0,
