@@ -9,14 +9,14 @@ import Strategy from '@/components/home/Strategy'
 import Criteria from '@/components/home/Criteria'
 
 export const metadata: Metadata = {
-  title: 'Methodic Painting | We Back Painting Companies in New England',
+  title: 'Methodic Painting | We Back Painting Companies in Massachusetts',
   description:
-    'Methodic Painting is building a network of the best painting companies in New England. Owner-operators who back painting companies to grow, transition, and win.',
+    'Methodic Painting is building a network of the best painting companies in Massachusetts. Owner-operators who back painting companies to grow, transition, and win.',
   alternates: { canonical: '/' },
   openGraph: {
-    title: 'Methodic Painting | We Back Painting Companies in New England',
+    title: 'Methodic Painting | We Back Painting Companies in Massachusetts',
     description:
-      'Methodic Painting is building a network of the best painting companies in New England. Owner-operators who back painting companies to grow, transition, and win.',
+      'Methodic Painting is building a network of the best painting companies in Massachusetts. Owner-operators who back painting companies to grow, transition, and win.',
     url: '/',
   },
 }
@@ -56,13 +56,13 @@ export default function Home() {
         backgroundImage="/images/hero-painter.jpg"
       />
 
-      <TextBlock heading="WHO WE ARE" tone="dark" align="right">
+      <TextBlock heading="WHO WE ARE" tone="dark" buttonLabel="Meet the Team" buttonHref="/team">
         <p>
-          Methodic Painting is building a network of the best painting companies in New England. We&apos;re not a private equity firm and we&apos;re not a big competitor coming to town. We&apos;re a group of owner-operators and trade-business builders who think painting companies deserve a better exit than a broker listing or a handshake sale.
+          Methodic Painting is building a network of the best painting companies in Massachusetts. We&apos;re not a private equity firm and we&apos;re not a big competitor coming to town. We&apos;re a group of owner-operators and trade-business builders who think painting companies deserve a better exit than a broker listing or a handshake sale.
         </p>
       </TextBlock>
 
-      <TextBlock heading="WHY METHODIC" tone="light" buttonLabel="Contact" align="left">
+      <TextBlock heading="WHY METHODIC" tone="light" buttonLabel="Contact">
         <p>
           Owners can take money off the table now and keep a piece of the business so they still win as it grows. We keep your crews, your foreman, and your name on the trucks. What changes is that you get the back office, the estimating support, and the growth capital you&apos;ve never had time to build yourself.
         </p>

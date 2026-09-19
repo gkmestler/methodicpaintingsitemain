@@ -5,7 +5,7 @@ import text from '../type.module.css'
 import styles from './Criteria.module.css'
 
 const criteria = [
-  'Established residential or commercial painting company in New England',
+  'Established residential or commercial painting company in Massachusetts',
   '[Revenue floor, e.g. $1M+ annual revenue]',
   'Strong reputation and repeat customer base',
   'Experienced crew leads or a foreman who can run jobs without the owner on site',

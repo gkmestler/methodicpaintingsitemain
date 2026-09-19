@@ -1,6 +1,6 @@
 # Methodic Painting
 
-Marketing site for Methodic Painting, a seller-facing acquisition brand that buys painting companies in New England. It is a sibling of the Methodic Ventures site and shares its visual system.
+Marketing site for Methodic Painting, a seller-facing acquisition brand that buys painting companies in Massachusetts. It is a sibling of the Methodic Ventures site and shares its visual system.
 
 ## Stack
 
