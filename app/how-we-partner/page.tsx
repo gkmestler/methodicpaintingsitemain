@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import PageHero from '@/components/PageHero'
 import TextBlock from '@/components/TextBlock'
-import SplitImage from '@/components/SplitImage'
+import Quote from '@/components/Quote'
 import CardGrid from '@/components/CardGrid'
 import Closer from '@/components/Closer'
 import Statement from '@/components/home/Statement'
@@ -55,12 +55,9 @@ export default function HowWePartnerPage() {
         </p>
       </Statement>
 
-      <SplitImage
-        statement="When you partner with Methodic, you decide what's right for you and the business, and we structure the deal around it."
-        imageSrc="/images/placeholders/partner-large.png"
-        imageAlt="[Partner photo]"
-        tone="dark"
-      />
+      <Quote tone="dark">
+        When you partner with Methodic, you decide what&apos;s right for you and the business, and we structure the deal around it.
+      </Quote>
 
       <TextBlock heading="OUR STRATEGY" tone="light">
         <p>
