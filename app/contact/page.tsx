@@ -46,7 +46,7 @@ export default function ContactPage() {
                 <div className={styles.detail}>
                   <dt>Phone</dt>
                   <dd>
-                    <a href={`tel:${site.phone}`}>{site.phone}</a>
+                    <a href={site.phoneHref}>{site.phone}</a>
                   </dd>
                 </div>
                 <div className={styles.detail}>

@@ -17,7 +17,7 @@ export default function Footer() {
             </Link>
             <ul className={styles.contactList}>
               <li>
-                <a href={`tel:${site.phone}`}>{site.phone}</a>
+                <a href={site.phoneHref}>{site.phone}</a>
               </li>
               <li>
                 <a href={`mailto:${site.email}`}>{site.email}</a>
