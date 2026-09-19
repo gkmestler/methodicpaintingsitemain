@@ -19,8 +19,9 @@
   margin-bottom: 0;
 }
 
-/* With a collage, the text stacks in the right column */
-.withImages {
+/* With a photo, the text stacks in its own column */
+.withImages,
+.withImage {
   gap: 40px;
 }
 
@@ -29,10 +30,17 @@
     grid-template-columns: 1.1fr 1fr;
     gap: 70px;
   }
+
+  .withImage {
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+  }
 }
 
-.withImages .heading {
-  margin-bottom: 20px;
+.withImages .heading,
+.withImage .heading {
+  line-height: 1.25;
+  margin-bottom: 28px;
 }
 
 .copy {
@@ -57,14 +65,20 @@
   line-height: 0;
 }
 
-.collageDark .photo {
+.frameDark .photo,
+.single.frameDark {
   border: 1px solid rgba(255, 255, 255, 0.35);
   background: #1a1a1a;
 }
 
-.collageLight .photo {
+.frameLight .photo,
+.single.frameLight {
   border: 1px solid var(--black);
   background: #cccccc;
+}
+
+.single {
+  aspect-ratio: 3 / 2;
 }
 
 .image {

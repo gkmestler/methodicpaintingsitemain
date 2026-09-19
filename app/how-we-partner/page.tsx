@@ -45,7 +45,11 @@ export default function HowWePartnerPage() {
         backgroundPosition="center 40%"
       />
 
-      <Statement heading="Strength in numbers with the power of autonomy" tone="light">
+      <Statement
+        heading="Strength in numbers with the power of autonomy"
+        tone="light"
+        image={{ src: '/images/partner-crew.jpg', alt: 'Two crew members in safety vests sharing a laugh on site' }}
+      >
         <p>
           Owners get both. You keep running your business the way you always have, and you get the economics and resources of being part of a bigger group.
         </p>
