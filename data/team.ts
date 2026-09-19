@@ -60,6 +60,14 @@ export const team: TeamMember[] = [
     linkedin: 'https://www.linkedin.com/in/warrencrossjr/',
   },
   {
+    name: 'Dave Gash',
+    title: 'Painting Industry Advisor',
+    bio: 'Founder of Gold Coast Design Inc., once one of the largest painting companies in California with more than 100 employees, with over 40 years in painting and general contracting',
+    image: '/images/team/dave-gash.jpg',
+    zoom: 1.05,
+    focus: 25,
+  },
+  {
     name: 'Matt Walker',
     title: 'Acquisitions Advisor',
     bio: 'Investor, Operator, and Entrepreneur Specializing in Business Acquisitions and Real Estate',
