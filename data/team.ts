@@ -1,4 +1,4 @@
-// Team grid, rendered in order. Co-founders first, then advisors.
+// Team grid, rendered in order. Co-founders first, then Dave, then the other advisors.
 // Roles, titles, and LinkedIn URLs come from the Methodic Ventures site.
 
 export type TeamMember = {
@@ -42,6 +42,14 @@ export const team: TeamMember[] = [
     linkedin: 'https://www.linkedin.com/in/dean-farber-8b2159399/',
   },
   {
+    name: 'Dave Gash',
+    title: 'Painting Industry Advisor',
+    bio: 'Founder of Gold Coast Design Inc., once one of the largest painting companies in California with more than 100 employees, with over 40 years in painting and general contracting',
+    image: '/images/team/dave-gash.jpg',
+    zoom: 1.05,
+    focus: 25,
+  },
+  {
     name: 'Brad Johnson',
     title: 'Operations Advisor',
     bio: 'Professor Emeritus at Babson College and Former Vice President at Wayfair',
@@ -58,14 +66,6 @@ export const team: TeamMember[] = [
     zoom: 1.1,
     focus: 35,
     linkedin: 'https://www.linkedin.com/in/warrencrossjr/',
-  },
-  {
-    name: 'Dave Gash',
-    title: 'Painting Industry Advisor',
-    bio: 'Founder of Gold Coast Design Inc., once one of the largest painting companies in California with more than 100 employees, with over 40 years in painting and general contracting',
-    image: '/images/team/dave-gash.jpg',
-    zoom: 1.05,
-    focus: 25,
   },
   {
     name: 'Matt Walker',
