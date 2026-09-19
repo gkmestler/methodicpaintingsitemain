@@ -13,6 +13,8 @@ type PageHeroProps = {
   size?: 'full' | 'tall' | 'short'
   // Optional photo layered under the gradient at low opacity
   backgroundImage?: string
+  // CSS object-position for that photo, for example 'center 40%'
+  backgroundPosition?: string
 }
 
 // Page-top hero. "light" is the home gradient from the reference hero,
@@ -27,12 +29,21 @@ export default function PageHero({
   tone = 'dark',
   size = 'short',
   backgroundImage,
+  backgroundPosition,
 }: PageHeroProps) {
   return (
     <section className={`${styles.hero} ${styles[tone]} ${size !== 'short' ? styles[size] : ''}`}>
       {backgroundImage && (
         <div className={styles.background} aria-hidden="true">
-          <Image src={backgroundImage} alt="" fill priority sizes="100vw" className={styles.backgroundImage} />
+          <Image
+            src={backgroundImage}
+            alt=""
+            fill
+            priority
+            sizes="100vw"
+            className={styles.backgroundImage}
+            style={backgroundPosition ? { objectPosition: backgroundPosition } : undefined}
+          />
         </div>
       )}
       <div className="container">

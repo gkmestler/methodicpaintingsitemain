@@ -42,6 +42,7 @@ export default function HowWePartnerPage() {
         tone="dark"
         size="tall"
         backgroundImage="/images/partner-painters.jpg"
+        backgroundPosition="center 40%"
       />
 
       <Statement heading="Strength in numbers with the power of autonomy" tone="light">
