@@ -41,7 +41,7 @@ export default function HowWePartnerPage() {
         buttonLabel="Contact"
         tone="dark"
         size="tall"
-        backgroundImage="/images/partner-handshake.jpg"
+        backgroundImage="/images/partner-painters.jpg"
       />
 
       <Statement heading="Strength in numbers with the power of autonomy" tone="light">
@@ -70,12 +70,6 @@ export default function HowWePartnerPage() {
       </TextBlock>
 
       <CardGrid cards={cards} tone="light" />
-
-      <Statement heading="Support customized for you and your business" tone="black">
-        <p>
-          Get the partnership without the corporate layer. Benefits of ownership, none of the 11pm bookkeeping.
-        </p>
-      </Statement>
 
       <Closer line1="If you want to go fast, go alone." line2="If you want to go far, go together." buttonLabel="Contact" style="serif" />
     </main>
