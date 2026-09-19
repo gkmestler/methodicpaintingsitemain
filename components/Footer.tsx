@@ -46,11 +46,6 @@ export default function Footer() {
         </div>
 
         <div className={styles.bottom}>
-          <p className={styles.parent}>
-            <a href={site.parentUrl} target="_blank" rel="noopener noreferrer">
-              A {site.parentName} company
-            </a>
-          </p>
           <p className={styles.legal}>
             <Link href="/privacy">Privacy Policy</Link>
             <span className={styles.divider} aria-hidden="true">|</span>

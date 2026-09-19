@@ -19,7 +19,7 @@ export default function PrivacyPage() {
 
           <h2>Who we are</h2>
           <p>
-            This website is operated by {site.name}, a {site.parentName} company based in Massachusetts. You can reach us at{' '}
+            This website is operated by {site.name}, based in Massachusetts. You can reach us at{' '}
             <a href={`mailto:${site.email}`}>{site.email}</a>.
           </p>
 

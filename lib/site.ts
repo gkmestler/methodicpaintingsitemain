@@ -10,8 +10,6 @@ export const site = {
   phone: '(760) 681-7000',
   phoneHref: 'tel:+17606817000',
   linkedin: '[LinkedIn URL]',
-  parentName: 'Methodic Ventures',
-  parentUrl: 'https://methodicventures.com',
   location: 'Based in Massachusetts',
 }
 
