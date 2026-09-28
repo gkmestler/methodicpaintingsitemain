@@ -6,7 +6,12 @@ import styles from './Strategy.module.css'
 const paths = [
   {
     heading: 'Stay and grow.',
-    body: 'You keep running the company with full day-to-day autonomy and the backing of a bigger group.',
+    body: 'You maintain complete operational autonomy, with shared resources and experienced partners to help you grow.',
+  },
+  {
+    heading: 'Step away.',
+    body: 'We build a transition on your timeline, install an operator, and protect your legacy and your employees.',
+    href: '/transition',
   },
 ]
 
@@ -25,11 +30,13 @@ export default function Strategy() {
             <span className={styles.number}>{`0${index + 1}`}</span>
             <h3 className={styles.pathHeading}>{path.heading}</h3>
             <p className={styles.pathBody}>{path.body}</p>
+            {path.href && (
+              <Link href={path.href} className={styles.optionLink}>
+                Explore this option <span aria-hidden="true">→</span>
+              </Link>
+            )}
           </div>
         ))}
-        <div className={styles.path}>
-          <Link className={styles.exitLink} href="/full-exit">Considering retirement or a full exit?</Link>
-        </div>
       </div>
     </Section>
   )

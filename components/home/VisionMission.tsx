@@ -10,7 +10,7 @@ const items = [
   },
   {
     title: 'OUR MISSION',
-    body: 'Partner with painting company owners who still have ambition, and give them the capital, systems, and support to get where they want to go.',
+    body: 'Partner with painting company owners who still have ambition, and provide the partnership, systems, and support to get where they want to go.',
     icon: <CompassIcon />,
   },
 ]

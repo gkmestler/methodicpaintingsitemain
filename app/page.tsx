@@ -27,8 +27,8 @@ const pillars = [
     body: 'We grow companies by investing in people, systems, and sales.',
   },
   {
-    title: 'YOUR TEAM STAYS',
-    body: 'We provide the back office, the culture support, and the numbers so your crews can focus on quality work.',
+    title: 'YOU STAY IN CONTROL',
+    body: 'You maintain complete operational autonomy, with experienced partners and shared resources behind you.',
   },
   {
     title: 'ALIGNED UPSIDE',
@@ -58,19 +58,19 @@ export default function Home() {
 
       <TextBlock heading="WHO WE ARE" tone="dark" buttonLabel="Meet the Team" buttonHref="/team">
         <p>
-          Methodic Painting is building a network of the best painting companies in Massachusetts. We&apos;re not a private equity firm and we&apos;re not a big competitor coming to town. We&apos;re a group of owner-operators and trade-business builders who think painting companies deserve a better exit than a broker listing or a handshake sale.
+          Methodic Painting brings together like-minded painting company owners in Massachusetts who want to build on what they&apos;ve started. Our approach is different from traditional private equity: owners stay involved, share what works, and help each other grow.
         </p>
       </TextBlock>
 
       <TextBlock heading="WHY METHODIC" tone="light" buttonLabel="Contact">
         <p>
-          Realize the value you’ve built and remain an owner as we grow. Continue leading with an agreed salary and meaningful retained ownership in your painting company.
+          Take some chips off the table while keeping a stake in what comes next. Retained ownership lets you participate in annual distributions and an eventual full exit that reflects the value you help build. Your team and company name stay in place. We bring experienced advisors and shared resources to help you take the business to the next level.
         </p>
       </TextBlock>
 
       <Statement heading="A network of painting companies built on reputation." tone="dark" images={networkPhotos}>
         <p>
-          You can&apos;t buy a good name in a town. You earn it, one job at a time. We work alongside you to build on that reputation and take your company further.
+          You can&apos;t buy a good name in a town. You earn it, one job at a time. Our job is to protect what you built and give your team the resources to build on it.
         </p>
       </Statement>
 
@@ -78,7 +78,7 @@ export default function Home() {
 
       <TextBlock heading="HOW WE GOT HERE" tone="dark" buttonLabel="Contact">
         <p>
-          The painting industry is fragmenting and consolidating at the same time. Good companies are stuck at a ceiling, owners are aging out, and the buyers showing up are either lowballing or planning to gut the business. We started Methodic Painting to be the other option. Whether you want to grow, hand off to the next generation, or step away entirely, we build the deal around that.
+          Building a respected painting company takes years. Taking it further can mean more demands on the owner, from hiring and estimating to keeping the back office running. We started Methodic Painting to be the other option. Our purpose is to help you take your company to the next level, with partners who share the work and respect what made the business yours.
         </p>
       </TextBlock>
 

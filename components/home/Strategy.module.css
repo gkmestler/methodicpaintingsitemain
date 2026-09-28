@@ -83,6 +83,26 @@
   max-width: 420px;
 }
 
+.optionLink {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 8px 0;
+  color: inherit;
+  font-size: 14px;
+  line-height: 1.5;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.optionLink:hover {
+  color: var(--bright-blue);
+}
+
+.optionLink:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 5px;
+}
+
 @media (min-width: 768px) {
   .pathBody {
     font-size: 18px;
