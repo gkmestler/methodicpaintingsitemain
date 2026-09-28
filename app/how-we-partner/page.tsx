@@ -4,7 +4,6 @@ import TextBlock from '@/components/TextBlock'
 import Image from 'next/image'
 import Quote from '@/components/Quote'
 import CardGrid from '@/components/CardGrid'
-import Closer from '@/components/Closer'
 import Statement from '@/components/home/Statement'
 
 import styles from './page.module.css'
@@ -23,15 +22,15 @@ export const metadata: Metadata = {
 const cards = [
   {
     title: 'FLEXIBLE DEAL STRUCTURES',
-    body: "Full sale, partial sale, seller note, stay-and-grow. We've done the work on structure so you don't have to.",
+    body: 'We shape the partnership around your goals, from the ownership you retain to the role you want as the business grows.',
   },
   {
     title: 'HANDS-ON SUPPORT',
-    body: 'Real help with hiring, payroll, HR, estimating, and marketing. You choose how much.',
+    body: 'Our advisors provide operational guidance, while partner owners share what works and help each other grow.',
   },
   {
     title: 'BUILDING VALUE AS PARTNERS',
-    body: 'Our advisors have built and sold trade businesses. That network works for you the day we close.',
+    body: 'As the group grows, we build shared resources and combine purchasing power to help every company go further.',
   },
 ]
 
@@ -49,12 +48,12 @@ export default function HowWePartnerPage() {
       />
 
       <Statement
-        heading="Strength in numbers with the power of autonomy"
+        heading="Your company. Your decisions. More support."
         tone="light"
         image={{ src: '/images/partner-crew.jpg', alt: 'Two crew members in safety vests sharing a laugh on site' }}
       >
         <p>
-          Owners get both. You keep running your business the way you always have, and you get the economics and resources of being part of a bigger group.
+          You maintain complete operational autonomy. You lead your team and make the day-to-day decisions, with experienced advisors and shared resources to support your growth. You also have other owners to turn to, people who understand the work and can share what&apos;s worked for them.
         </p>
       </Statement>
 
@@ -64,7 +63,7 @@ export default function HowWePartnerPage() {
 
       <TextBlock heading="OUR STRATEGY" tone="light">
         <p>
-          We invest in painting companies with strong crews and strong reputations. We keep the people, we keep the name, and we add the systems and capital to grow.
+          We partner with painting companies with strong crews and strong reputations. We keep the people and the name, and bring the experience and resources to help the business grow.
         </p>
       </TextBlock>
 
@@ -83,7 +82,6 @@ export default function HowWePartnerPage() {
 
       <CardGrid cards={cards} tone="light" />
 
-      <Closer line1="If you want to go fast, go alone." line2="If you want to go far, go together." buttonLabel="Contact" style="serif" />
     </main>
   )
 }

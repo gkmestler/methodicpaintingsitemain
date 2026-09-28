@@ -7,7 +7,7 @@ import styles from './page.module.css'
 
 const title = 'Contact'
 const description =
-  'Thinking about selling or growing your painting company? Start with a conversation. No broker, no pressure, no obligation.'
+  'Learn more about how we can take your business to the next level.'
 
 export const metadata: Metadata = {
   title,
@@ -21,7 +21,7 @@ export default function ContactPage() {
     <main className={styles.page}>
       <PageHero
         title="CONTACT"
-        subtitle="Thinking about selling or growing? Start with a conversation. No broker, no pressure, no obligation."
+        subtitle="Learn more about how we can take your business to the next level."
         tone="transparent"
       />
 

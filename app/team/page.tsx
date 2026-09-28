@@ -31,6 +31,9 @@ export default function TeamPage() {
         <h2 className={styles.heading} data-reveal>
           Meet the Team
         </h2>
+        <p className={styles.intro} data-reveal>
+          Our advisors bring operating and acquisition experience to help partner owners grow their companies and build a more valuable group.
+        </p>
         <TeamGrid />
       </Section>
     </main>

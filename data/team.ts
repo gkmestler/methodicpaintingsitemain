@@ -1,4 +1,4 @@
-// Team grid, rendered in order. Co-founders first, then Dave, then the other advisors.
+// Team grid, rendered in order. Advisors first, then the three co-founders.
 // Roles, titles, and LinkedIn URLs come from the Methodic Ventures site.
 
 export type TeamMember = {
@@ -18,30 +18,6 @@ export type TeamMember = {
 
 export const team: TeamMember[] = [
   {
-    name: 'Gavin Mestler',
-    title: 'Co-Founder and Managing Partner',
-    image: '/images/team/gavin-mestler-2.jpg',
-    zoom: 1.3,
-    focus: 28,
-    linkedin: 'https://www.linkedin.com/in/gavinmestler/',
-  },
-  {
-    name: 'Logan Mestler',
-    title: 'Co-Founder and Managing Partner',
-    image: '/images/team/logan-mestler.jpg',
-    zoom: 1.25,
-    focus: 38,
-    linkedin: 'https://www.linkedin.com/in/logan-mestler-753917253/',
-  },
-  {
-    name: 'Dean Farber',
-    title: 'Co-Founder and Managing Partner',
-    image: '/images/team/dean-farber-4.jpg',
-    zoom: 1.3,
-    focus: 46,
-    linkedin: 'https://www.linkedin.com/in/dean-farber-8b2159399/',
-  },
-  {
     name: 'Dave Gash',
     title: 'Painting Industry Advisor',
     bio: 'Founder of Gold Coast Design Inc., once one of the largest painting companies in California with more than 100 employees, with over 40 years in painting and general contracting',
@@ -52,7 +28,7 @@ export const team: TeamMember[] = [
   {
     name: 'Brad Johnson',
     title: 'Operations Advisor',
-    bio: 'Professor Emeritus at Babson College and Former Vice President at Wayfair',
+    bio: 'Former Vice President at Wayfair',
     image: '/images/team/brad-johnson.jpg',
     zoom: 1.15,
     focus: 25,
@@ -119,5 +95,29 @@ export const team: TeamMember[] = [
     zoom: 1,
     focus: 0,
     linkedin: 'https://www.linkedin.com/in/chadmestler/',
+  },
+  {
+    name: 'Gavin Mestler',
+    title: 'Co-Founder and Managing Partner',
+    image: '/images/team/gavin-mestler-2.jpg',
+    zoom: 1.3,
+    focus: 28,
+    linkedin: 'https://www.linkedin.com/in/gavinmestler/',
+  },
+  {
+    name: 'Logan Mestler',
+    title: 'Co-Founder and Managing Partner',
+    image: '/images/team/logan-mestler.jpg',
+    zoom: 1.25,
+    focus: 38,
+    linkedin: 'https://www.linkedin.com/in/logan-mestler-753917253/',
+  },
+  {
+    name: 'Dean Farber',
+    title: 'Co-Founder and Managing Partner',
+    image: '/images/team/dean-farber-4.jpg',
+    zoom: 1.3,
+    focus: 46,
+    linkedin: 'https://www.linkedin.com/in/dean-farber-8b2159399/',
   },
 ]

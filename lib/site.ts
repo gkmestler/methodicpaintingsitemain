@@ -5,7 +5,7 @@ export const site = {
   name: 'Methodic Painting',
   url: 'https://methodicpainting.com',
   description:
-    'Methodic Painting backs painting companies in Massachusetts to grow, transition, and win. Owner-operators buying painting companies, not private equity.',
+    'Methodic Painting brings together painting company owners in Massachusetts with the partnership, systems, and support to grow.',
   email: 'contact@methodicpainting.com',
   phone: '(760) 681-7000',
   phoneHref: 'tel:+17606817000',
