@@ -88,3 +88,9 @@
     font-size: 18px;
   }
 }
+
+.exitLink {
+  font-size: 14px;
+  color: var(--light-blue);
+  text-underline-offset: 4px;
+}

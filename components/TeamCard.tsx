@@ -32,14 +32,14 @@ export default function TeamCard({ member, index }: TeamCardProps) {
   }
 
   return (
-    <div className={styles.card} data-reveal style={{ transitionDelay: `${(index % 4) * 0.08}s` }}>
+    <div className={styles.card} data-reveal style={{ transitionDelay: `${(index % 3) * 0.08}s` }}>
       <div className={styles.imageWrap}>
         <Image
           src={member.image || placeholder}
           alt={member.name}
           width={400}
           height={500}
-          sizes="(min-width: 992px) 25vw, 50vw"
+          sizes="(min-width: 1400px) 400px, (min-width: 992px) 33vw, (min-width: 576px) 50vw, 100vw"
           className={styles.image}
           style={imageStyle}
         />

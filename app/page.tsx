@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 const pillars = [
   {
     title: 'REAL VALUE',
-    body: 'We grow companies by investing in people, systems, and sales, not by cutting costs. No forced timelines.',
+    body: 'We grow companies by investing in people, systems, and sales.',
   },
   {
     title: 'YOUR TEAM STAYS',
@@ -64,13 +64,13 @@ export default function Home() {
 
       <TextBlock heading="WHY METHODIC" tone="light" buttonLabel="Contact">
         <p>
-          Owners can take money off the table now and keep a piece of the business so they still win as it grows. We keep your crews, your foreman, and your name on the trucks. What changes is that you get the back office, the estimating support, and the growth capital you&apos;ve never had time to build yourself.
+          Realize the value you’ve built and remain an owner as we grow. Continue leading with an agreed salary and meaningful retained ownership in your painting company.
         </p>
       </TextBlock>
 
       <Statement heading="A network of painting companies built on reputation." tone="dark" images={networkPhotos}>
         <p>
-          You can&apos;t buy a good name in a town. You earn it, one house and one commercial job at a time. Our job is to protect what you built and give your team the resources to build on it.
+          You can&apos;t buy a good name in a town. You earn it, one job at a time. We work alongside you to build on that reputation and take your company further.
         </p>
       </Statement>
 
@@ -84,7 +84,7 @@ export default function Home() {
 
       <CardGrid
         heading="GROWTH BUILT ON PARTNERSHIP"
-        intro="We grow companies by investing in people and systems, not by cutting costs. Every deal is structured so the owner, the crew, and Methodic all win together."
+        intro="We grow companies by investing in people and systems. Every deal is structured so the owner, the crew, and Methodic all win together."
         cards={pillars}
         tone="light"
       />

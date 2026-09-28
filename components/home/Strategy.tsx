@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Section from '../Section'
 import text from '../type.module.css'
 import styles from './Strategy.module.css'
@@ -6,10 +7,6 @@ const paths = [
   {
     heading: 'Stay and grow.',
     body: 'You keep running the company with full day-to-day autonomy and the backing of a bigger group.',
-  },
-  {
-    heading: 'Step away.',
-    body: 'We build a transition on your timeline, install an operator, and protect your legacy and your employees.',
   },
 ]
 
@@ -30,6 +27,9 @@ export default function Strategy() {
             <p className={styles.pathBody}>{path.body}</p>
           </div>
         ))}
+        <div className={styles.path}>
+          <Link className={styles.exitLink} href="/full-exit">Considering retirement or a full exit?</Link>
+        </div>
       </div>
     </Section>
   )

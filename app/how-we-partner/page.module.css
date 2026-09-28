@@ -5,3 +5,12 @@
   height: auto;
   filter: drop-shadow(0 0 2px #62b2ff) drop-shadow(0 0 10px #62b2ff) drop-shadow(0 0 28px rgba(98, 178, 255, 0.6));
 }
+
+.exitLink {
+  margin-top: 24px;
+  font-size: 14px;
+}
+
+.exitLink a {
+  text-underline-offset: 4px;
+}

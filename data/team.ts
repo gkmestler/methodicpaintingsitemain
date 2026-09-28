@@ -1,4 +1,4 @@
-// Team grid, rendered in order. Co-founders first, then Dave, then the other advisors.
+// Existing people and biographies, grouped for the Team page.
 // Roles, titles, and LinkedIn URLs come from the Methodic Ventures site.
 
 export type TeamMember = {
@@ -16,7 +16,7 @@ export type TeamMember = {
   focus?: number
 }
 
-export const team: TeamMember[] = [
+export const partners: TeamMember[] = [
   {
     name: 'Gavin Mestler',
     title: 'Co-Founder and Managing Partner',
@@ -41,6 +41,9 @@ export const team: TeamMember[] = [
     focus: 46,
     linkedin: 'https://www.linkedin.com/in/dean-farber-8b2159399/',
   },
+]
+
+export const advisors: TeamMember[] = [
   {
     name: 'Dave Gash',
     title: 'Painting Industry Advisor',
@@ -52,7 +55,7 @@ export const team: TeamMember[] = [
   {
     name: 'Brad Johnson',
     title: 'Operations Advisor',
-    bio: 'Professor Emeritus at Babson College and Former Vice President at Wayfair',
+    bio: 'Former Vice President at Wayfair',
     image: '/images/team/brad-johnson.jpg',
     zoom: 1.15,
     focus: 25,
