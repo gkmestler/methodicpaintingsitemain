@@ -1,4 +1,4 @@
-// Team grid, rendered in order. Advisors first, then the three co-founders.
+// Existing people and biographies, grouped for the Team page.
 // Roles, titles, and LinkedIn URLs come from the Methodic Ventures site.
 
 export type TeamMember = {
@@ -16,7 +16,34 @@ export type TeamMember = {
   focus?: number
 }
 
-export const team: TeamMember[] = [
+export const partners: TeamMember[] = [
+  {
+    name: 'Gavin Mestler',
+    title: 'Co-Founder and Managing Partner',
+    image: '/images/team/gavin-mestler-2.jpg',
+    zoom: 1.3,
+    focus: 28,
+    linkedin: 'https://www.linkedin.com/in/gavinmestler/',
+  },
+  {
+    name: 'Logan Mestler',
+    title: 'Co-Founder and Managing Partner',
+    image: '/images/team/logan-mestler.jpg',
+    zoom: 1.25,
+    focus: 38,
+    linkedin: 'https://www.linkedin.com/in/logan-mestler-753917253/',
+  },
+  {
+    name: 'Dean Farber',
+    title: 'Co-Founder and Managing Partner',
+    image: '/images/team/dean-farber-4.jpg',
+    zoom: 1.3,
+    focus: 46,
+    linkedin: 'https://www.linkedin.com/in/dean-farber-8b2159399/',
+  },
+]
+
+export const advisors: TeamMember[] = [
   {
     name: 'Dave Gash',
     title: 'Painting Industry Advisor',
@@ -79,15 +106,6 @@ export const team: TeamMember[] = [
     focus: 10,
   },
   {
-    name: 'Chad Mestler',
-    title: 'Capital Markets Advisor',
-    bio: 'Founder of Helvetica Group, a real estate investment and private lending firm he has led since 2001. An attorney and licensed broker with nearly 30 years in hard money lending and capital markets, he brings the financing expertise behind every deal.',
-    image: '/images/team/chad-mestler.jpg',
-    zoom: 1,
-    focus: 0,
-    linkedin: 'https://www.linkedin.com/in/chadmestler/',
-  },
-  {
     name: 'Erik Noyes',
     title: 'Strategy Advisor',
     bio: 'Director of The Generator AI Lab and Professor of Entrepreneurship at Babson College, named one of the 50 best undergraduate business professors in the country by Poets&Quants.',
@@ -97,27 +115,12 @@ export const team: TeamMember[] = [
     linkedin: 'https://www.linkedin.com/in/erik-noyes-40b1b73/',
   },
   {
-    name: 'Gavin Mestler',
-    title: 'Co-Founder and Managing Partner',
-    image: '/images/team/gavin-mestler-2.jpg',
-    zoom: 1.3,
-    focus: 28,
-    linkedin: 'https://www.linkedin.com/in/gavinmestler/',
-  },
-  {
-    name: 'Logan Mestler',
-    title: 'Co-Founder and Managing Partner',
-    image: '/images/team/logan-mestler.jpg',
-    zoom: 1.25,
-    focus: 38,
-    linkedin: 'https://www.linkedin.com/in/logan-mestler-753917253/',
-  },
-  {
-    name: 'Dean Farber',
-    title: 'Co-Founder and Managing Partner',
-    image: '/images/team/dean-farber-4.jpg',
-    zoom: 1.3,
-    focus: 46,
-    linkedin: 'https://www.linkedin.com/in/dean-farber-8b2159399/',
+    name: 'Chad Mestler',
+    title: 'Capital Markets Advisor',
+    bio: 'Founder of Helvetica Group, a real estate investment and private lending firm he has led since 2001. An attorney and licensed broker with nearly 30 years in hard money lending and capital markets, he brings the financing expertise behind every deal.',
+    image: '/images/team/chad-mestler.jpg',
+    zoom: 1,
+    focus: 0,
+    linkedin: 'https://www.linkedin.com/in/chadmestler/',
   },
 ]

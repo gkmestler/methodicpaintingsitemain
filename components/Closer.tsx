@@ -2,7 +2,7 @@ import Button from './Button'
 import styles from './Closer.module.css'
 
 type CloserProps = {
-  line1: string
+  line1?: string
   line2: string
   buttonLabel: string
   buttonHref?: string
@@ -18,12 +18,12 @@ export default function Closer({ line1, line2, buttonLabel, buttonHref = '/conta
         <div className={styles.content} data-reveal>
           {style === 'caps' ? (
             <>
-              <p className={styles.eyebrow}>{line1}</p>
+              {line1 && <p className={styles.eyebrow}>{line1}</p>}
               <h2 className={styles.headline}>{line2}</h2>
             </>
           ) : (
             <>
-              <p className={styles.lead}>{line1}</p>
+              {line1 && <p className={styles.lead}>{line1}</p>}
               <h2 className={styles.serifHeadline}>{line2}</h2>
             </>
           )}
