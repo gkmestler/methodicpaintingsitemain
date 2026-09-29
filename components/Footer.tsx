@@ -23,7 +23,7 @@ export default function Footer() {
                 <a href={`mailto:${site.email}`}>{site.email}</a>
               </li>
               <li>
-                <a href={site.linkedin} target="_blank" rel="noopener noreferrer" className={styles.social} aria-label="Methodic Painting on LinkedIn">
+                <a href={site.linkedin} target="_blank" rel="noopener noreferrer" className={styles.social} aria-label="Methodic Ventures on LinkedIn">
                   <LinkedInIcon />
                   <span>LinkedIn</span>
                 </a>

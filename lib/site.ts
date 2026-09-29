@@ -1,5 +1,4 @@
-// Single source of truth for site-wide values. Bracketed strings are
-// placeholders to fill in before launch.
+// Single source of truth for site-wide values.
 
 export const site = {
   name: 'Methodic Painting',
@@ -9,7 +8,7 @@ export const site = {
   email: 'contact@methodicpainting.com',
   phone: '(760) 681-7000',
   phoneHref: 'tel:+17606817000',
-  linkedin: '[LinkedIn URL]',
+  linkedin: 'https://www.linkedin.com/company/methodicventures/',
   location: 'Based in Massachusetts',
 }
 
