@@ -61,17 +61,6 @@
   opacity: 1;
 }
 
-.social {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.social svg {
-  width: 18px;
-  height: 18px;
-}
-
 .nav {
   display: flex;
   align-items: flex-start;

@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import Logo from './Logo'
-import LinkedInIcon from './icons/LinkedInIcon'
 import { site, navLinks, contactLink } from '@/lib/site'
 import styles from './Footer.module.css'
 
@@ -21,12 +20,6 @@ export default function Footer() {
               </li>
               <li>
                 <a href={`mailto:${site.email}`}>{site.email}</a>
-              </li>
-              <li>
-                <a href={site.linkedin} target="_blank" rel="noopener noreferrer" className={styles.social} aria-label="Methodic Ventures on LinkedIn">
-                  <LinkedInIcon />
-                  <span>LinkedIn</span>
-                </a>
               </li>
             </ul>
           </div>

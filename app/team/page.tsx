@@ -22,8 +22,8 @@ export default function TeamPage() {
   return (
     <main>
       <PageHero
-        title="MORE EXPERIENCE. IN YOUR CORNER."
-        subtitle="You know your business. We bring a network of painting operators, business builders, and advisors to help you grow a stronger, more valuable company."
+        title="OUR TEAM & ADVISORY NETWORK"
+        subtitle="You know your business. We bring a network of painting operators and advisors to help you grow a stronger, more valuable company."
         buttonLabel="Talk about your business"
         tone="dark"
         size="short"
@@ -33,10 +33,8 @@ export default function TeamPage() {
       <Section tone="light" id="advisory-network">
         <div className={styles.rosterHeader} data-reveal>
           <div>
-            <p className={styles.eyebrow}>PEOPLE BEHIND THE PERSPECTIVE</p>
             <h2 className={styles.heading}>Meet our advisors.</h2>
           </div>
-          <p>Select a card to read about their experience.</p>
         </div>
         <TeamGrid members={advisors} />
       </Section>
@@ -69,11 +67,9 @@ export default function TeamPage() {
 
       <Section tone="light" id="partners">
         <div className={styles.partnersHeader} data-reveal>
-          <p className={styles.eyebrow}>THE PEOPLE YOU PARTNER WITH</p>
           <h2 className={styles.heading}>Partners</h2>
           <p className={styles.lead}>
-            Gavin, Logan, and Dean lead Methodic Painting. Start with a conversation
-            about the company you’ve built and where you want to take it.
+            Gavin, Logan, and Dean lead Methodic Painting. Start with a conversation about the company you’ve built and where you want to take it.
           </p>
         </div>
         <TeamGrid members={partners} />

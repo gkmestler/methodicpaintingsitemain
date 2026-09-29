@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import PageHero from '@/components/PageHero'
 import ContactForm from '@/components/ContactForm'
-import LinkedInIcon from '@/components/icons/LinkedInIcon'
 import { site } from '@/lib/site'
 import styles from './page.module.css'
 
@@ -54,10 +53,6 @@ export default function ContactPage() {
                   <dd>{site.location}</dd>
                 </div>
               </dl>
-              <a href={site.linkedin} target="_blank" rel="noopener noreferrer" className={styles.social}>
-                <LinkedInIcon />
-                <span>LinkedIn</span>
-              </a>
             </aside>
           </div>
         </div>

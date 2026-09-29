@@ -56,9 +56,9 @@ export default function Home() {
         backgroundImage="/images/hero-painter.jpg"
       />
 
-      <TextBlock heading="WHO WE ARE" tone="dark" buttonLabel="Meet the Team" buttonHref="/team">
+      <TextBlock heading="Who We Are" tone="dark" buttonLabel="Meet the Team" buttonHref="/team">
         <p>
-          Methodic Painting brings together like-minded painting company owners in Massachusetts who want to build on what they&apos;ve started. Our approach is different from traditional private equity: owners stay involved, share what works, and help each other grow.
+          Methodic is a first-of-its-kind coalition of like-minded painting companies working towards a shared vision: building a leading network of trusted painting businesses. Methodic does not operate as a traditional private equity firm or as a large competitor, but rather as an alliance of likeminded owner operators driven by a common mission, value system, and purpose.
         </p>
       </TextBlock>
 

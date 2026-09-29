@@ -98,23 +98,3 @@
 .detail a:hover {
   border-color: var(--white);
 }
-
-.social {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  color: var(--white);
-  text-decoration: none;
-  font-size: 15px;
-  opacity: 0.8;
-  transition: opacity 0.3s ease;
-}
-
-.social:hover {
-  opacity: 1;
-}
-
-.social svg {
-  width: 20px;
-  height: 20px;
-}
