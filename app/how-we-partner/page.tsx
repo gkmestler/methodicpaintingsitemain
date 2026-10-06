@@ -1,12 +1,9 @@
 import type { Metadata } from 'next'
 import PageHero from '@/components/PageHero'
 import TextBlock from '@/components/TextBlock'
-import Image from 'next/image'
 import Quote from '@/components/Quote'
 import CardGrid from '@/components/CardGrid'
 import Statement from '@/components/home/Statement'
-
-import styles from './page.module.css'
 
 const title = 'How We Partner'
 const description =
@@ -68,15 +65,12 @@ export default function HowWePartnerPage() {
       </TextBlock>
 
       <TextBlock
-        heading="WE ARE MASSACHUSETTS FOCUSED AND PEOPLE FIRST"
+        heading="PARTNERING NATIONWIDE. PEOPLE FIRST."
         tone="dark"
         buttonLabel="Contact"
-        aside={
-          <Image src="/images/massachusetts.svg" alt="Outline of Massachusetts" width={3000} height={1728} unoptimized className={styles.stateIcon} />
-        }
       >
         <p>
-          We&apos;re based in Massachusetts and we&apos;re buying here. We go where the best crews and the best reputations are.
+          We&apos;re looking to partner with painting companies across the United States. We go where the best crews and the best reputations are.
         </p>
       </TextBlock>
 

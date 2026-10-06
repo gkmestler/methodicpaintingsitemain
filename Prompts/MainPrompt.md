@@ -1,3 +1,5 @@
+> Historical project brief: as of October 6, 2026, Methodic Painting is seeking painting companies across the United States. Regional acquisition wording below is preserved for reference and is no longer current.
+
 # Claude Code prompt: build methodicpainting.com
 
 Paste everything below this line into Claude Code from inside a new empty project folder. Before you run it, clone the reference repo next to it so Claude Code can read it:

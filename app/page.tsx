@@ -9,14 +9,14 @@ import Strategy from '@/components/home/Strategy'
 import Criteria from '@/components/home/Criteria'
 
 export const metadata: Metadata = {
-  title: 'Methodic Painting | We Back Painting Companies in Massachusetts',
+  title: 'Methodic Painting | We Back Painting Companies Across the U.S.',
   description:
-    'Methodic Painting is building a network of the best painting companies in Massachusetts. Owner-operators who back painting companies to grow, transition, and win.',
+    'Methodic Painting is building a network of the best painting companies across the United States. Owner-operators who back painting companies to grow, transition, and win.',
   alternates: { canonical: '/' },
   openGraph: {
-    title: 'Methodic Painting | We Back Painting Companies in Massachusetts',
+    title: 'Methodic Painting | We Back Painting Companies Across the U.S.',
     description:
-      'Methodic Painting is building a network of the best painting companies in Massachusetts. Owner-operators who back painting companies to grow, transition, and win.',
+      'Methodic Painting is building a network of the best painting companies across the United States. Owner-operators who back painting companies to grow, transition, and win.',
     url: '/',
   },
 }
