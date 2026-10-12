@@ -3,13 +3,13 @@ import PageHero from '@/components/PageHero'
 import Section from '@/components/Section'
 import TeamGrid from '@/components/TeamGrid'
 import Closer from '@/components/Closer'
-import { advisors, partners } from '@/data/team'
+import { advisors } from '@/data/team'
 import { showAdvisorPreview, prospectiveAdvisors } from '@/data/advisor-preview'
 import styles from './page.module.css'
 
 const title = 'Team & Advisory Network'
 const description =
-  'Meet Methodic Painting’s advisory network and partners, with experience in painting, home services, operations, legal, accounting, and business transitions.'
+  'Meet Methodic Painting’s advisory network, with experience in painting, home services, operations, legal, accounting, and business transitions.'
 
 export const metadata: Metadata = {
   title,
@@ -65,20 +65,12 @@ export default function TeamPage() {
         </Section>
       )}
 
-      <Section tone="light" id="partners">
-        <div className={styles.partnersHeader} data-reveal>
-          <h2 className={styles.heading}>Partners</h2>
-          <p className={styles.lead}>
-            Gavin, Logan, and Dean lead Methodic Painting. Start with a conversation about the company you’ve built and where you want to take it.
-          </p>
-        </div>
-        <TeamGrid members={partners} />
-      </Section>
+      {/* Partners section archived: docs/archive/partners-section-2026-10-12.md */}
 
       <Closer
         line1="YOUR BUSINESS. YOUR NEXT CHAPTER."
         line2="Let’s talk about what comes next."
-        buttonLabel="Talk with the partners"
+        buttonLabel="Talk about your business"
         style="serif"
       />
     </main>

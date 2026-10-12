@@ -16,32 +16,7 @@ export type TeamMember = {
   focus?: number
 }
 
-export const partners: TeamMember[] = [
-  {
-    name: 'Gavin Mestler',
-    title: 'Co-Founder and Managing Partner',
-    image: '/images/team/gavin-mestler-2.jpg',
-    zoom: 1.3,
-    focus: 28,
-    linkedin: 'https://www.linkedin.com/in/gavinmestler/',
-  },
-  {
-    name: 'Logan Mestler',
-    title: 'Co-Founder and Managing Partner',
-    image: '/images/team/logan-mestler.jpg',
-    zoom: 1.25,
-    focus: 38,
-    linkedin: 'https://www.linkedin.com/in/logan-mestler-753917253/',
-  },
-  {
-    name: 'Dean Farber',
-    title: 'Co-Founder and Managing Partner',
-    image: '/images/team/dean-farber-4.jpg',
-    zoom: 1.3,
-    focus: 46,
-    linkedin: 'https://www.linkedin.com/in/dean-farber-8b2159399/',
-  },
-]
+// Partners section archived: docs/archive/partners-section-2026-10-12.md
 
 export const advisors: TeamMember[] = [
   {
