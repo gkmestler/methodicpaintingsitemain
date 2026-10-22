@@ -1,7 +1,9 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import PageHero from '@/components/PageHero'
 import Section from '@/components/Section'
 import TeamGrid from '@/components/TeamGrid'
+import TeamMemberInfo from '@/components/TeamMemberInfo'
 import Closer from '@/components/Closer'
 import { advisors } from '@/data/team'
 import { showAdvisorPreview, prospectiveAdvisors } from '@/data/advisor-preview'
@@ -9,7 +11,7 @@ import styles from './page.module.css'
 
 const title = 'Team & Advisory Network'
 const description =
-  'Meet Methodic Painting’s advisory network, with experience in painting, home services, operations, legal, accounting, and business transitions.'
+  'Meet Methodic Painting’s co-founding managing partners, Chairman Simon Hermant, and advisory network.'
 
 export const metadata: Metadata = {
   title,
@@ -27,8 +29,51 @@ export default function TeamPage() {
         buttonLabel="Talk about your business"
         tone="dark"
         size="short"
-        backgroundImage="/images/founders.jpg"
       />
+
+      <Section tone="light" id="leadership">
+        <div className={styles.rosterHeader} data-reveal>
+          <h2 className={styles.heading}>Meet our leadership.</h2>
+        </div>
+        <div className={styles.leadershipGrid}>
+          <figure className={styles.leadershipCard} data-reveal>
+            <div className={styles.foundersPhoto}>
+              <Image
+                src="/images/Methodic Team Photo.jpg"
+                alt="Methodic Painting’s co-founding managing partners"
+                fill
+                sizes="(min-width: 992px) 66vw, 100vw"
+                className={styles.leadershipImage}
+              />
+            </div>
+            <figcaption className={styles.leadershipCaption}>
+              <h3>Gavin Mestler, Logan Mestler, and Dean Farber</h3>
+              <p>Co-Founding Managing Partners</p>
+            </figcaption>
+          </figure>
+          <figure className={styles.leadershipCard} data-reveal>
+            <div className={styles.chairmanPhoto}>
+              <Image
+                src="/images/team/Simont Hermant.webp"
+                alt="Simon Hermant"
+                fill
+                unoptimized
+                sizes="(min-width: 992px) 33vw, 100vw"
+                className={styles.leadershipImage}
+              />
+            </div>
+            <figcaption className={styles.chairmanCaption}>
+              <TeamMemberInfo member={{
+                name: 'Simon Hermant',
+                title: 'Chairman',
+                titleNote: 'board of advisors',
+                image: '/images/team/Simont Hermant.webp',
+                bio: 'Simon owns and operates WOW 1 DAY PAINTING in Toronto, Mississauga, and Oakville. A partner in the launch of Toronto’s first franchise, he brings experience building painting teams, developing employees, and delivering a consistent customer experience.',
+              }} />
+            </figcaption>
+          </figure>
+        </div>
+      </Section>
 
       <Section tone="light" id="advisory-network">
         <div className={styles.rosterHeader} data-reveal>

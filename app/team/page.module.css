@@ -1,3 +1,79 @@
+.leadershipGrid {
+  display: grid;
+  gap: 20px;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.leadershipCard {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 1819 / 1604;
+  margin: 0;
+  border: 1px solid var(--black);
+  background: var(--black);
+  color: var(--white);
+}
+
+.foundersPhoto,
+.chairmanPhoto {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.leadershipImage {
+  object-fit: cover;
+  object-position: center top;
+  filter: grayscale(100%);
+}
+
+.chairmanCaption {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+}
+
+.leadershipCaption {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  min-height: 84px;
+  padding: 8px 15px 6px;
+  background: var(--black);
+  border: 1px solid var(--white);
+}
+
+.leadershipCaption h3 {
+  font-family: var(--font-serif);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.leadershipCaption p {
+  margin-top: 2px;
+  font-size: 14px;
+  line-height: 1.4;
+  opacity: 0.85;
+}
+
+@media (min-width: 992px) {
+  .leadershipGrid {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .leadershipCard:last-child {
+    aspect-ratio: auto;
+  }
+}
+
+.chairmanPhoto .leadershipImage {
+  object-position: 45% top;
+}
+
 .heading {
   font-family: var(--font-serif);
   font-size: clamp(32px, 3.6vw, 52px);

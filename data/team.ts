@@ -5,6 +5,7 @@ export type TeamMember = {
   name: string
   // Shown under the name in the card
   title: string
+  titleNote?: string
   // Optional description revealed when the card is clicked
   bio?: string
   image: string
