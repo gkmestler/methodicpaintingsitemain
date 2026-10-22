@@ -28,7 +28,6 @@ export default function ContactPage() {
         <div className="container">
           <div className={styles.layout}>
             <div className={styles.formWrap} data-reveal>
-              <div className={styles.glow} aria-hidden="true" />
               <div className={styles.formCard}>
                 <ContactForm />
               </div>

@@ -33,21 +33,15 @@
   position: relative;
 }
 
-.glow {
-  position: absolute;
-  inset: -30px;
-  border-radius: 40px;
-  background: linear-gradient(135deg, #4a9ee8 0%, #62b2ff 25%, #7fc0ff 50%, #62b2ff 75%, #4a9ee8 100%);
-  filter: blur(50px);
-  opacity: 0.3;
-  pointer-events: none;
-}
-
 .formCard {
   position: relative;
   background: linear-gradient(180deg, #1a1a1a 0%, #0d0d0d 100%);
   border: 1px solid rgba(98, 178, 255, 0.2);
   border-radius: 20px;
+  /* Paint the glow as rounded shadows, avoiding Safari's filtered-layer clipping. */
+  box-shadow:
+    0 0 60px 20px rgba(98, 178, 255, 0.16),
+    0 0 100px 30px rgba(74, 158, 232, 0.12);
   padding: 30px 20px;
 }
 
