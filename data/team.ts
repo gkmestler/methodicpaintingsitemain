@@ -9,6 +9,8 @@ export type TeamMember = {
   // Optional description revealed when the card is clicked
   bio?: string
   image: string
+  unoptimized?: boolean
+  horizontalFocus?: number
   linkedin?: string
   // Crop tuning so every face lands at the same size and height in the card.
   // zoom scales the photo (1 = fill the card), focus is the vertical point
@@ -20,6 +22,16 @@ export type TeamMember = {
 // Partners section archived: docs/archive/partners-section-2026-10-12.md
 
 export const advisors: TeamMember[] = [
+  {
+    name: 'Simon Hermant',
+    title: 'Chairman',
+    titleNote: 'board of advisors',
+    image: '/images/team/Simont Hermant.webp',
+    unoptimized: true,
+    horizontalFocus: 45,
+    focus: 0,
+    bio: 'Simon owns and operates WOW 1 DAY PAINTING in Toronto, Mississauga, and Oakville. A partner in the launch of Toronto’s first franchise, he brings experience building painting teams, developing employees, and delivering a consistent customer experience.',
+  },
   {
     name: 'Dave Gash',
     title: 'Painting Business Advisor',
@@ -63,15 +75,6 @@ export const advisors: TeamMember[] = [
     zoom: 1.1,
     focus: 42,
     linkedin: 'https://www.linkedin.com/in/evan-farber/',
-  },
-  {
-    name: 'Scott Waxler',
-    title: 'Business Valuation & Transition Advisor',
-    bio: 'Founder, Lockebridge Capital Partners',
-    image: '/images/team/scott-waxler.jpg',
-    zoom: 1,
-    focus: 0,
-    linkedin: 'https://www.linkedin.com/in/scottwaxler/',
   },
   {
     name: 'Edward Gorelick',

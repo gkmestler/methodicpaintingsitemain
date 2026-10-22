@@ -17,7 +17,7 @@ export default function TeamCard({ member, index }: TeamCardProps) {
   const zoom = member.zoom ?? 1
   const focus = member.focus ?? 30
   const imageStyle = {
-    objectPosition: `50% ${focus}%`,
+    objectPosition: `${member.horizontalFocus ?? 50}% ${focus}%`,
     transform: zoom !== 1 ? `scale(${zoom})` : undefined,
     transformOrigin: `50% ${focus}%`,
   }
@@ -28,6 +28,7 @@ export default function TeamCard({ member, index }: TeamCardProps) {
         <Image
           src={member.image || placeholder}
           alt={member.name}
+          unoptimized={member.unoptimized}
           width={400}
           height={500}
           sizes="(min-width: 1400px) 400px, (min-width: 992px) 33vw, (min-width: 576px) 50vw, 100vw"
